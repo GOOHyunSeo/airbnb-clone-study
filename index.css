@@ -577,7 +577,7 @@ span {
 }
 
 .review__1__box__more {
-  width: 439.41px;
+  width: 52px;
   height: 24px;
   font-size: 16px;
   font-weight: 600;
@@ -587,6 +587,7 @@ span {
     Helvetica Neue, sans-serif;
   margin-top: 8px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .review__2__box {
@@ -685,7 +686,7 @@ span {
 }
 
 .review__2__box__more {
-  width: 439.41px;
+  width: 52px;
   height: 24px;
   font-size: 16px;
   font-weight: 600;
@@ -695,6 +696,7 @@ span {
     Helvetica Neue, sans-serif;
   margin-top: 8px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .review__3__box {
@@ -982,18 +984,6 @@ span {
     Helvetica Neue, sans-serif;
 }
 
-.review__5__box__more {
-  width: 439.41px;
-  height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: underline;
-  color: #222222;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  margin-top: 8px;
-}
-
 .review__6__box {
   width: 473.33px;
   height: 226px;
@@ -1090,7 +1080,7 @@ span {
 }
 
 .review__6__box__more {
-  width: 439.41px;
+  width: 52px;
   height: 24px;
   font-size: 16px;
   font-weight: 600;
@@ -1100,6 +1090,7 @@ span {
     Helvetica Neue, sans-serif;
   margin-top: 8px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .review__footer {

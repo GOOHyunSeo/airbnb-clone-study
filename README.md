@@ -1,6 +1,6 @@
-# springpublic
+## 규은 01-26
 
-개인 스프링 연습
+조규은 test
 
 ## Git practice
 

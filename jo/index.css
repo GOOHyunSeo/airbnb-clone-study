@@ -42,6 +42,33 @@ body {
 /*배너 바로 아래 영역 - 검색창 바로 위*/
 .bottom-banner-and-top-searchbar {
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.airbnb-logo {
+    width: 540px;
+    height: 80px;
+}
+.new-page-go {
+    width: 258px;
+    height: 80px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.guesthouse,
+.activity,
+.on-line-activity {
+    text-align: center;
+}
+.your-space-airbnb {
+    width: 540px;
+    height: 80px;
+    text-align: right;
+    line-height: 80px;
 }
 
 /*------------------------------검색창 영역------------------------------------*/
@@ -55,7 +82,7 @@ body {
 
 /* Full search bar space styles */
 .full-searchbar-space {
-    width: 1000px;
+    width: 800px;
     height: 60px;
     border-radius: 50px / 50px;
     display: flex;
@@ -78,9 +105,7 @@ body {
 }
 
 .travel-spot-circle {
-    background-color: #f5f5f5;
     border-radius: 50px / 50px;
-    padding: 10px;
     position: relative;
 }
 
@@ -91,13 +116,11 @@ body {
 }
 
 .travel-spot-naming {
-    font-size: 14px;
+    font-size: 12px;
     color: #555555;
 }
 
 .travel-spot-name-input {
-    border: none;
-    outline: none;
     font-size: 16px;
     margin-left: 10px;
     /* Add other input styles as needed */

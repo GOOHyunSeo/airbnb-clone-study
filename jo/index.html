@@ -9,7 +9,82 @@
     <script src="../index.js"></script>
   </head>
   <body>
-    <div class="hello"></div>
+    <div class="hello">
+
+      <!-- 사이트 가장 상단 '에어비앤비에서 사랑받고 있는~' 부분 -->
+      <div class="page-top-banner">에어비앤비에서 사랑받고 있는 '게스트 선호'숙소에 대해 알아보기</div>
+
+      <!-- 검색 공간 부분 -->
+      <div class="search-space">
+        <!-- 로고와 숙소/체험/온라인체험 있는 부분 -->
+        <div class="bottom-banner-and-top-searchbar">
+          뭐지
+        </div>
+        <!-- 전체 검색 바 -->
+        <div class="full-searchbar-space">
+          <!-- 여행지 검색 부분 -->
+          <div class="travel-spot">
+            <div class="travel-spot-circle">
+              <label class="travel-spot-search">
+                <div class="travel-spot-text-space">
+                  <div class="travel-spot-naming" style="font-weight: bold">여행지</div>
+                  <input clss="travle-spot-name-input" aria-autocomplete="none" autocomplete="of"
+                         autocorrect="off" spellcheck="false" id="search-input" name="query" type="search"
+                         aria-describedby="bigsearch-query-location-description" placeholder="여행지 검색"
+                         data-testid="structured-search-input-field-query" value>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- 체크인, 체크아웃 부분 -->
+          <div class="check-inorout">
+            <div class="check-in-area">
+              <div class="check-in-square" role="button" tabindex="0" area-expanded="false"
+                   data-testid="structured-search-input-field-split-dates-0">
+                <div class="check-in-and-date">
+                  <div class="check-in-naming" style="font-weight: bold">체크인</div>
+                  <div class="in-date-add">날짜 추가</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="check-out-area">
+              <div class="check-out-square" role="button" tabindex="0" area-expanded="false"
+                   data-testid="structured-search-input-field-split-dates-1">
+                <div class="check-out-and-date">
+                  <div class="check-out-naming" style="font-weight: bold">체크아웃</div>
+                  <div class="out-date-add">날짜 추가</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 여행자 선택 부분 -->
+          <div class="guest-select">
+            <div class="guest-select-and-search">
+              <div class="guest-select-area">
+                <div class="guest-select-and-add">
+                  <div class="guest-naming" style="font-weight: bold">여행자</div>
+                  <div class="guest-add">게스트 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="search-button-area">
+              <button class="search-guest-button" type="button" data-testid="structured-search-input-search-button">
+                <div class="search-click">
+                  <div class="search-click-image">
+                    <img id="magnifying-glass" src="./images/magnifying-glass.png" width="20px" height="20px">
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div class="background">
       <div class="review__background">
         <div class="review__box">

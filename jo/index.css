@@ -8,6 +8,7 @@ html,
 body {
   /* width: 100%;
   height: 100%; */
+  font-family: 'Arial', sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -27,6 +28,154 @@ body {
   height: 2084.59px;
   background-color: aqua;
 }
+
+/* 사이트 상단 "에어비앤비에서 사랑받고 있는~" 부분 배너 */
+.page-top-banner {
+    height: 60px;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        text-decoration: underline;
+}
+/*배너 바로 아래 영역 - 검색창 바로 위*/
+.bottom-banner-and-top-searchbar {
+    height: 80px;
+}
+
+/*------------------------------검색창 영역------------------------------------*/
+.search-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+/* Full search bar space styles */
+.full-searchbar-space {
+    width: 1000px;
+    height: 60px;
+    border-radius: 50px / 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+/* Travel spot styles */
+.travel-spot {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.travel-spot-circle {
+    background-color: #f5f5f5;
+    border-radius: 50px / 50px;
+    padding: 10px;
+    position: relative;
+}
+
+.travel-spot-search {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.travel-spot-naming {
+    font-size: 14px;
+    color: #555555;
+}
+
+.travel-spot-name-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    /* Add other input styles as needed */
+}
+
+/* Check-in, Check-out styles */
+.check-inorout {
+    display: flex;
+    align-items: center;
+}
+
+.check-in-area,
+.check-out-area {
+    margin-right: 20px;
+}
+
+.check-in-square,
+.check-out-square {
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.check-in-naming,
+.check-out-naming {
+    font-size: 14px;
+    color: #555555;
+}
+
+.in-date-add,
+.out-date-add {
+    font-size: 12px;
+    color: #888888;
+    /* Add other date add styles as needed */
+}
+
+/* Guest select styles */
+.guest-select {
+    display: flex;
+    align-items: center;
+}
+
+.guest-select-area {
+    margin-right: 20px;
+}
+
+.guest-naming {
+    font-size: 14px;
+    color: #555555;
+}
+
+.guest-add {
+    font-size: 12px;
+    color: #888888;
+    /* Add other guest add styles as needed */
+}
+
+/* Search button styles */
+.search-button-area {
+    /* Add styles as needed */
+}
+
+.search-guest-button {
+    background-color: #ff5a5f;
+    color: #ffffff;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50%;
+    /* Add other button styles as needed */
+}
+
+/* Adjustments for responsiveness as needed */
+@media (max-width: 768px) {
+    /* Add responsive styles as needed */
+}
+/*---------------------------------------검색창 영역 끝---------------------------------------------------*/
 
 .background {
   width: 100%;

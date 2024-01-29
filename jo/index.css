@@ -45,30 +45,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .airbnb-logo {
-    width: 540px;
+    width: 307px;
     height: 80px;
 }
 .new-page-go {
-    width: 258px;
+    width: 300px;
     height: 80px;
     padding: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.your-space-airbnb {
+    width: 360px;
+    height: 80px;
+    text-align: right;
+    line-height: 80px;
+}
+
 .guesthouse,
 .activity,
 .on-line-activity {
     text-align: center;
 }
-.your-space-airbnb {
-    width: 540px;
-    height: 80px;
-    text-align: right;
-    line-height: 80px;
+
+.your-airbnb {
+    display: flex;
 }
 
 /*------------------------------검색창 영역------------------------------------*/
@@ -80,6 +87,13 @@ body {
     background-color: #ffffff;
 }
 
+.partition {
+    flex: 0 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basic: 0px;
+}
+
 /* Full search bar space styles */
 .full-searchbar-space {
     width: 800px;
@@ -88,12 +102,20 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     background-color: #ffffff;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.travel-spot,
+.check-inorout,
+.guest-select {
+    flex: 1;
 
 }
 
@@ -105,14 +127,19 @@ body {
 }
 
 .travel-spot-circle {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
     border-radius: 50px / 50px;
-    position: relative;
+    background-color: #E6E6E6;
 }
 
 .travel-spot-search {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .travel-spot-naming {
@@ -122,7 +149,6 @@ body {
 
 .travel-spot-name-input {
     font-size: 16px;
-    margin-left: 10px;
     /* Add other input styles as needed */
 }
 
@@ -134,27 +160,33 @@ body {
 
 .check-in-area,
 .check-out-area {
-    margin-right: 20px;
+    flex: 1;
+
 }
 
 .check-in-square,
 .check-out-square {
-    background-color: #f5f5f5;
-    padding: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px / 50px;
+    background-color: #E6E6E6;
     cursor: pointer;
 }
 
 .check-in-naming,
 .check-out-naming {
-    font-size: 14px;
+    margin-left: 20px;
+    font-size: 12px;
     color: #555555;
 }
 
 .in-date-add,
 .out-date-add {
+    margin-left: 20px;
     font-size: 12px;
     color: #888888;
-    /* Add other date add styles as needed */
 }
 
 /* Guest select styles */
@@ -163,24 +195,29 @@ body {
     align-items: center;
 }
 
-.guest-select-area {
-    margin-right: 20px;
+.guest-select-and-search {
+    flex: 1;
+}
+
+.guest-select-circle {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px / 50px;
+    background-color: #E6E6E6;
 }
 
 .guest-naming {
-    font-size: 14px;
+    margin-left: 20px;
+    font-size: 12px;
     color: #555555;
 }
 
 .guest-add {
+    margin-left: 20px;
     font-size: 12px;
     color: #888888;
-    /* Add other guest add styles as needed */
-}
-
-/* Search button styles */
-.search-button-area {
-    /* Add styles as needed */
 }
 
 .search-guest-button {
@@ -191,6 +228,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     border-radius: 50%;
+    margin-right: 5px;
     /* Add other button styles as needed */
 }
 

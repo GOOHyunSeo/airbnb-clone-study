@@ -24,7 +24,17 @@
             <div class="activity">체험</div>
             <div class="on-line-activity">온라인 체험</div>
           </div>
-          <div class="your-space-airbnb">당신의 공간을 에어비앤비 하세요</div>
+          <div class="your-space-airbnb">
+            <div class="your-airbnb">
+              <div class="airbnb-haseyo" style="font-size:14px; font-weight:bold;">당신의 공간을 에어비앤비 하세요</div>
+              <div class="web-logo">
+                <img id="www-logo" src="./images/world-wide-web.png" width="20px" height="20px">
+              </div>
+            </div>
+            <div class="login">
+
+            </div>
+          </div>
         </div>
         <!-- 전체 검색 바 -->
         <div class="full-searchbar-space">
@@ -34,7 +44,7 @@
               <label class="travel-spot-search">
                 <div class="travel-spot-text-space">
                   <div class="travel-spot-naming" style="font-weight: bold">여행지</div>
-                  <input clss="travle-spot-name-input" aria-autocomplete="none" autocomplete="of"
+                  <input class="travle-spot-name-input" style="border:none; background: transparent;"  aria-autocomplete="none" autocomplete="of"
                          autocorrect="off" spellcheck="false" id="search-input" name="query" type="search"
                          aria-describedby="bigsearch-query-location-description" placeholder="여행지 검색"
                          data-testid="structured-search-input-field-query" value>
@@ -43,6 +53,9 @@
 
             </div>
           </div>
+
+          <!-- 검색창 구분선 -->
+          <div class="partition"></div>
 
           <!-- 체크인, 체크아웃 부분 -->
           <div class="check-inorout">
@@ -56,6 +69,9 @@
 
               </div>
             </div>
+            <!-- 검색창 구분선 -->
+            <div class="partition"></div>
+
             <div class="check-out-area">
               <div class="check-out-square" role="button" tabindex="0" area-expanded="false"
                    data-testid="structured-search-input-field-split-dates-1">
@@ -67,25 +83,31 @@
             </div>
           </div>
 
+          <!-- 검색창 구분선 -->
+          <div class="partition"></div>
+
           <!-- 여행자 선택 부분 -->
           <div class="guest-select">
-            <div class="guest-select-and-search">
-              <div class="guest-select-area">
-                <div class="guest-select-and-add">
-                  <div class="guest-naming" style="font-weight: bold">여행자</div>
-                  <div class="guest-add">게스트 추가</div>
-                </div>
-              </div>
-            </div>
-            <div class="search-button-area">
-              <button class="search-guest-button" type="button" data-testid="structured-search-input-search-button">
-                <div class="search-click">
-                  <div class="search-click-image">
-                    <img id="magnifying-glass" src="./images/magnifying-glass.png" width="20px" height="20px">
+            <div class="guest-select-circle">
+              <div class="guest-select-and-search">
+                <div class="guest-select-area">
+                  <div class="guest-select-and-add">
+                    <div class="guest-naming" style="font-weight: bold">여행자</div>
+                    <div class="guest-add">게스트 추가</div>
                   </div>
                 </div>
-              </button>
+              </div>
+              <div class="search-button-area">
+                <button class="search-guest-button" type="button" data-testid="structured-search-input-search-button">
+                  <div class="search-click">
+                    <div class="search-click-image">
+                      <img id="magnifying-glass" src="./images/magnifying-glass.png" width="20px" height="20px">
+                    </div>
+                  </div>
+                </button>
+              </div>
             </div>
+
           </div>
 
         </div>

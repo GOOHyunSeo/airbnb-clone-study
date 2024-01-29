@@ -41,6 +41,7 @@ body {
 }
 /*배너 바로 아래 영역 - 검색창 바로 위*/
 .bottom-banner-and-top-searchbar {
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -51,6 +52,8 @@ body {
 .airbnb-logo {
     width: 307px;
     height: 80px;
+    float: left;
+    padding: 0px 40px;
 }
 .new-page-go {
     width: 300px;
@@ -58,14 +61,17 @@ body {
     padding: 24px;
     display: flex;
     align-items: center;
+    padding: 0px 24px;
     justify-content: space-between;
 }
 
 .your-space-airbnb {
-    width: 360px;
+    width: 400px;
     height: 80px;
-    text-align: right;
+    align-items: center;
     line-height: 80px;
+    float: right;
+    display: flex;
 }
 
 .guesthouse,
@@ -76,6 +82,32 @@ body {
 
 .your-airbnb {
     display: flex;
+
+}
+
+.web-logo {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50px / 50px;
+    border: 1px solid #e0e0e0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-menu {
+    margin-left: 8px;
+}
+
+.profile-area {
+    margin-left: 10px;
 }
 
 /*------------------------------검색창 영역------------------------------------*/

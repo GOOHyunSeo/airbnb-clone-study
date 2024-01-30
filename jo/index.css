@@ -1948,7 +1948,7 @@ span {
     cursor: pointer;
     transform: background-color 0.3s;
 }
-.category: hover{
+.category:hover{
     background-color: #f0f0f0;
 }
 .host_box{

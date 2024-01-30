@@ -1841,3 +1841,172 @@ span {
   justify-content: flex-start;
   cursor: pointer;
 }
+/*------------------------------온라인체험 영역------------------------------------*/
+.online-logo{
+    margin: 8px -8px 8px 50px;
+}
+.online-container h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+.online-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column; /* 사진을 세로로 정렬 */
+    align-items: flex-start; /* 가로 정렬 기준을 시작 부분에 맞춤 */
+    margin-top: 30px;
+    overflow-x: auto; /* 가로 스크롤을 허용하여 모든 사진을 볼 수 있도록 함 */
+}
+.containerBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.containerphoto {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.containerphoto img {
+    width: 590px;
+    height: 332px;
+    object-fit: cover;
+}
+.containerphotoCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.PhotoCoverText1,
+.PhotoCoverText2 {
+    color: white;
+}
+.PhotoCoverText1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.PhotoCoverText2 {
+    font-size: 22px;
+    font-weight: 600px;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+.PhotoCoverButton1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    touch-action: manipulation;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+.PhotoCoverButton1:hover {
+    background-color: #dee2e6;
+}
+.host_title{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    margin: 60px 150px 15px 50px;
+}
+.bogi{
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.categories-container{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+.category{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 13.5px;
+    cursor: pointer;
+    transform: background-color 0.3s;
+}
+.category: hover{
+    background-color: #f0f0f0;
+}
+.host_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 0 70px 0 50px;
+    margin-bottom: 15px;
+}
+.host_img1 {
+    background-image: url("images/host1.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.host_img2{
+    background-image: url("images/host2.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.host_img3{
+    background-image: url("images/host3.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.host_img4{
+    background-image: url("images/host4.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.host_img5{
+    background-image: url("images/host5.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.host_img6{
+    background-image: url("images/host6.jpeg");
+    height: 250px;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+.info1{
+    margin: 7px 0;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.info2{
+    font-size: 15px;
+    font-weight: 350;
+    color: black;
+}
+.info3{
+    font-size: 16px;
+    font-weight: 550;
+    padding-top: 5px;
+}

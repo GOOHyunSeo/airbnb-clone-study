@@ -1,0 +1,10 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    box-sizing: border-box;
+}
+
+footer {
+    border-top-width: 2px solid rgb(230,230,230);
+    background-color: rgb(247,247,247);
+}

@@ -1925,12 +1925,36 @@ span {
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    margin: 60px 150px 15px 50px;
+    margin: 60px 70px 15px 50px;
 }
 .bogi{
     font-size: 14px;
     font-weight: normal;
     text-decoration: underline;
+    margin-right: 15px;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.prev-button,
+.next-button {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 50%;
+}
+.prev-button {
+    margin-left: 2px;
+}
+.next-button {
+    margin-left: 5px;
 }
 .categories-container{
     display: flex;

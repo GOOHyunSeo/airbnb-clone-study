@@ -1845,17 +1845,31 @@ span {
 .online-logo{
     margin: 8px -8px 8px 50px;
 }
-.online-container h1 {
+.title-experience {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.title-experience .button-container{
+    margin-right: 70px;
+}
+.title-experience .prev-button {
+    pointer-events: none;
+    opacity: 0.2;
+}
+.highlighted-text {
     font-size: 32px;
-    margin-bottom: 15px;
+    font-weight: bold;
     margin-left: 50px;
+    color: black;
 }
 .online-container {
     display: flex;
     box-sizing: border-box;
     flex-direction: column; /* 사진을 세로로 정렬 */
     align-items: flex-start; /* 가로 정렬 기준을 시작 부분에 맞춤 */
-    margin-top: 30px;
+    margin-top: 10px;
     overflow-x: auto; /* 가로 스크롤을 허용하여 모든 사진을 볼 수 있도록 함 */
 }
 .containerBox {
@@ -1925,12 +1939,36 @@ span {
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    margin: 60px 150px 15px 50px;
+    margin: 60px 70px 15px 50px;
 }
 .bogi{
     font-size: 14px;
     font-weight: normal;
     text-decoration: underline;
+    margin-right: 15px;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.prev-button,
+.next-button {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 50%;
+}
+.prev-button {
+    margin-left: 2px;
+}
+.next-button {
+    margin-left: 5px;
 }
 .categories-container{
     display: flex;

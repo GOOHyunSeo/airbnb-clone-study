@@ -1843,147 +1843,147 @@ span {
 }
 /*------------------------------온라인체험 영역------------------------------------*/
 .online-logo{
-    margin: 8px -8px 8px 50px;
+  margin: 8px -8px 8px 50px;
 }
 .title-experience {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .title-experience .button-container{
-    margin-right: 70px;
+  margin-right: 70px;
 }
 .title-experience .prev-button {
-    pointer-events: none;
-    opacity: 0.2;
+  pointer-events: none;
+  opacity: 0.2;
 }
 .highlighted-text {
-    font-size: 32px;
-    font-weight: bold;
-    margin-left: 50px;
-    color: black;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 50px;
+  color: black;
 }
 .online-container {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column; /* 사진을 세로로 정렬 */
-    align-items: flex-start; /* 가로 정렬 기준을 시작 부분에 맞춤 */
-    margin-top: 10px;
-    overflow-x: auto; /* 가로 스크롤을 허용하여 모든 사진을 볼 수 있도록 함 */
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column; /* 사진을 세로로 정렬 */
+  align-items: flex-start; /* 가로 정렬 기준을 시작 부분에 맞춤 */
+  margin-top: 10px;
+  overflow-x: auto; /* 가로 스크롤을 허용하여 모든 사진을 볼 수 있도록 함 */
 }
 .containerBox {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1600px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  overflow: hidden;
 }
 .containerphoto {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0 5px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 5px;
 }
 .containerphoto img {
-    width: 590px;
-    height: 332px;
-    object-fit: cover;
+  width: 590px;
+  height: 332px;
+  object-fit: cover;
 }
 .containerphotoCover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .PhotoCoverText1,
 .PhotoCoverText2 {
-    color: white;
+  color: white;
 }
 .PhotoCoverText1 {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 .PhotoCoverText2 {
-    font-size: 22px;
-    font-weight: 600px;
-    line-height: 1.2;
-    margin-top: 5px;
+  font-size: 22px;
+  font-weight: 600px;
+  line-height: 1.2;
+  margin-top: 5px;
 }
 .PhotoCoverButton1 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    padding: 8px 16px;
-    text-align: center;
-    font-size: 14px;
-    touch-action: manipulation;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    border: none;
-    color: black;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 14px;
+  touch-action: manipulation;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  color: black;
+  transition: background-color 0.3s ease;
 }
 .PhotoCoverButton1:hover {
-    background-color: #dee2e6;
+  background-color: #dee2e6;
 }
 .host_title{
-    font-size: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    margin: 50px 70px 15px 50px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  margin: 50px 70px 15px 50px;
 }
 .bogi{
-    font-size: 14px;
-    font-weight: normal;
-    text-decoration: underline;
-    margin-right: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-right: 15px;
 }
 .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 .prev-button,
 .next-button {
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    font-size: 12px;
-    margin: 0;
-    border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
 }
 .prev-button {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 .next-button {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 .categories-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    padding: 10px;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding: 10px;
 }
 
 .cate-container1,
 .cate-container2 {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .category {
@@ -1995,100 +1995,100 @@ span {
   transition: background-color 0.3s;
 }
 .cate-container1 .category {
-    border: 1px solid #ccc;
-    background-color: white;
+  border: 1px solid #ccc;
+  background-color: white;
 }
 .cate-container2 .category {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .separator {
-    margin-right: 10px;
-    margin-left: 10px;
-    content: "";
-    border-left: 1px solid #ccc;
-    height: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  content: "";
+  border-left: 1px solid #ccc;
+  height: 40px;
 }
 .move-up-button {
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    font-size: 12px;
-    margin: 0;
-    border-radius: 50%;
-    z-index: 2;
-    position: absolute;
-    left: 96%;
-    margin-left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 96%;
+  margin-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .cate-container2 .category:last-child {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 .category:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 .host_box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding: 0 70px 0 50px;
-    margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 0 70px 0 50px;
+  margin-bottom: 15px;
 }
 .host_img1 {
-    background-image: url("images/online_images/host1.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host1.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .host_img2{
-    background-image: url("images/online_images/host2.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host2.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .host_img3{
-    background-image: url("images/online_images/host3.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host3.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .host_img4{
-    background-image: url("images/online_images/host4.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host4.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .host_img5{
-    background-image: url("images/online_images/host5.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host5.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .host_img6{
-    background-image: url("images/online_images/host6.jpeg");
-    height: 250px;
-    background-size: 100% 100%;
-    border-radius: 5%;
+  background-image: url("images/online_images/host6.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 .info1{
-    margin: 7px 0;
-    font-size: 13px;
-    font-weight: bold;
-    padding-top: 5px;
+  margin: 7px 0;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 5px;
 }
 .info2{
-    font-size: 15px;
-    font-weight: 350;
-    color: black;
+  font-size: 15px;
+  font-weight: 350;
+  color: black;
 }
 .info3{
-    font-size: 16px;
-    font-weight: 550;
-    padding-top: 5px;
+  font-size: 16px;
+  font-weight: 550;
+  padding-top: 5px;
 }
 .best_title{
   font-size: 22px;
@@ -2133,4 +2133,161 @@ span {
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
+}
+.time_title{
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  margin: 100px 70px 15px 50px;
+}
+.six-time_box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 0 70px 0 50px;
+  margin-bottom: 15px;
+}
+.time_bogi{
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-right: 15px;
+}
+.time_box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+.time_box img {
+  max-width: 100%;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.time_box .info {
+  margin-left: 15px;
+}
+.time_info1{
+  margin-top: -15px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 300px;
+  padding-top: 15px;
+}
+.time_info2{
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 350;
+  color: black;
+}
+.time_info3{
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.time_box .time_button {
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 15px; 
+}
+.time_box .time_button::after {
+  content: attr(data-time);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+.organization_title{
+    font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  margin: 100px 70px 15px 50px;
+}
+.organization_img1 {
+  background-image: url("images/online_images/organization_1.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_img2{
+  background-image: url("images/online_images/organization_2.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_img3{
+  background-image: url("images/online_images/organization_3.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_img4{
+  background-image: url("images/online_images/organization_4.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_img5{
+  background-image: url("images/online_images/organization_5.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_img6{
+  background-image: url("images/online_images/organization_6.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.organization_info3 {
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  font-weight: 550;
+  padding-top: 5px;
+  position: relative;
+}
+.organization_info3 span {
+  position: relative;
+  font-weight: 100;
+}
+.organization_info3 p {
+  font-weight: lighter;
+}
+.organization_info3 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 8px; 
+  width: 100%; /* 밑줄의 길이, 원하는 만큼 조절 가능 */
+  border-bottom: 2px solid; /* 밑줄의 두께와 색상 설정 */
+  transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+}
+.view-all-button {
+  background-color: transparent;
+  color: #717171; /* 원하는 색상으로 조절 */
+  border: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
 }

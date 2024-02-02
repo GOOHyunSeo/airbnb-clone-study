@@ -50,14 +50,14 @@
     cursor: pointer;
 }
 
-.hover11 figure img {
+/*.hover11 figure img {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
   .hover11 figure:hover img {
     opacity: .5;
-  }
+  }*/
 
 .img_big {
     border-radius: 15px;  
@@ -218,7 +218,7 @@
 
 .box1 {
     
-    margin-top: 50px;
+    margin-top: 40px;
     
     width: 680px;
     height: 100px;
@@ -294,7 +294,7 @@
 
 .box2 {
     
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 105px;
     width: 340px;
     height: 430px;

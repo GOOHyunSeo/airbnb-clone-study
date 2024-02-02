@@ -2197,7 +2197,8 @@ span {
   opacity: 0.2;
 }
 .category:hover {
-  background-color: #f0f0f0;
+  border-color: #333;
+  transition: border-color 0.3s ease;
 }
 .host_box{
   display: grid;
@@ -2242,6 +2243,24 @@ span {
   background-size: 100% 100%;
   border-radius: 5%;
 }
+.host {
+  position: relative;
+}
+.wishlist-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 24px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.wishlist-button svg {
+  fill: rgba(0, 0, 0, 0.5);
+  stroke: white;
+  stroke-width: 2;
+}
 .info1{
   margin: 7px 0;
   font-size: 13px;
@@ -2256,7 +2275,7 @@ span {
 .info3{
   font-size: 16px;
   font-weight: 550;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 .best_title{
   font-size: 22px;
@@ -2324,11 +2343,28 @@ span {
   margin-right: 15px;
 }
 .time_box {
+  position: relative;
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 10px;
+}
+.time_box .wishlist-button {
+  position: absolute;
+  right: 15px;
+  width: 24px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.time_box .wishlist-button svg {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+  width: 20px;
+  height: 20px;
 }
 .time_box img {
   max-width: 100%;

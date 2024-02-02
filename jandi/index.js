@@ -123,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", function(event) {
         // 클릭된 요소가 travel-spot-circle이나 check-in-square이 아니라면 원래의 상태로 복원합니다.
         if (!event.target.closest(".travel-spot-circle") && !event.target.closest(".check-in-square")
-        && !event.target.closest(".check-out-square") && !event.target.closest(".guest-select-circle")) {
+        && !event.target.closest(".check-out-square") && !event.target.closest(".guest-select-circle")
+        && !event.target.closest(".local-search-area")) {
             fullSearchbarSpace.style.backgroundColor = originalBackgroundColor;
             travelSpotCircle.style.backgroundColor = originalCircleBackgroundColor;
             travelSpotCircle.style.boxShadow = originalCircleBoxShadow;
@@ -142,6 +143,59 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function showLocalSearchArea() {
-  var fullSearchbarSpace = document.querySelector('.full-searchbar-space');
+  var fullSearchbarSpace = document.querySelector(".full-searchbar-space");
   fullSearchbarSpace.classList.add('active');
 }
+
+//여행지 검색 클릭시 이벤트
+document.addEventListener("click", function (event) {
+    var localSearchArea = document.querySelector(".local-search-area");
+
+    if (event.target.closest(".travel-spot-circle")) {
+        localSearchArea.style.display = "block";
+    } else if(!event.target.closest(".local-search-area") && !event.target.closest(".travel-spot-circle")) {
+        localSearchArea.style.display = "none";
+    }
+});
+
+//체크인, 체크아웃 클릭시 이벤트
+document.addEventListener("click", function(event){
+    var calendarViewSpace = document.querySelector(".calendar-view-space");
+
+    if(event.target.closest(".check-in-square")){
+        calendarViewSpace.style.display = "block";
+    } else if(!event.target.closest(".check-in-square") && !event.target.closest(".calendar-view-space")) {
+        calendarViewSpace.style.display = "none";
+    }
+});
+
+//체크인, 아웃 날짜선택 탭 클릭
+document.addEventListener('DOMContentLoaded', function() {
+            // DOM이 로드된 후에 실행될 코드
+
+            // 각 탭 버튼에 대한 이벤트 리스너 추가
+            var dateSelectButton = document.querySelector('.date-select');
+            var monthPartButton = document.querySelector('.month-part');
+            var flexibleScheduleButton = document.querySelector('.flexible-schedule');
+
+            var tabTitle = document.querySelector(".tab-title");
+            var originalBackgroundColor = tabTitle.style.backgroundColor;
+
+            dateSelectButton.addEventListener('click', function() {
+                // 날짜 지정 탭 버튼이 클릭되었을 때 실행될 코드
+                console.log('날짜 지정 탭이 클릭되었습니다.');
+                // 추가로 원하는 동작을 여기에 작성하세요
+            });
+
+            monthPartButton.addEventListener('click', function() {
+                // 월 단위 탭 버튼이 클릭되었을 때 실행될 코드
+                console.log('월 단위 탭이 클릭되었습니다.');
+                // 추가로 원하는 동작을 여기에 작성하세요
+            });
+
+            flexibleScheduleButton.addEventListener('click', function() {
+                // 유연한 일정 탭 버튼이 클릭되었을 때 실행될 코드
+                console.log('유연한 일정 탭이 클릭되었습니다.');
+                // 추가로 원하는 동작을 여기에 작성하세요
+            });
+});

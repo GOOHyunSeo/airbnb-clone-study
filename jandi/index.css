@@ -191,8 +191,11 @@ body {
 
 /* Check-in, Check-out styles */
 .check-inorout {
-    display: flex;
     align-items: center;
+}
+.position-detail{
+    display: flex;
+    position: relative;
 }
 
 .check-in-area,
@@ -213,7 +216,6 @@ body {
 
 .check-in-square:hover {
     background-color: #E6E6E6;
-    cursor: pointer;
 }
 .check-out-square:hover {
     background-color: #E6E6E6;
@@ -291,12 +293,8 @@ body {
     border-radius: 50px / 50px;
     display: none;
     padding: 15px;
-
 }
 
-.full-searchbar-space.active .local-search-area {
-  display: block;
-}
 
 .local-search-background {
     margin-top: 20px;
@@ -430,6 +428,68 @@ button {
     overflow-x: auto;
     white-space: nowrap;
  }
+
+ .calendar-view-space {
+    position: absolute;
+    top: calc(100% + 5px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
+    left: 0;
+    width: 800px;
+    height: 540px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    display: none;
+    padding: 16px;
+ }
+
+ .detail-partition {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .schedule-select-area {
+
+ }
+
+ #tabs {
+    align-items: center;
+ }
+
+ .tab-select-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ .tab-title {
+    display: flex;
+    align-items: center;
+    background-color: #E6E6E6;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    justify-content: center;
+    padding: 3px;
+ }
+
+ .select-title-tab {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .date-select,
+  .month-part,
+  .flexible-schedule {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    padding: 10px;
+  }
 
 /* Adjustments for responsiveness as needed */
 @media (max-width: 768px) {

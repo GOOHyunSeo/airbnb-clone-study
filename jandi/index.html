@@ -138,27 +138,51 @@
 
           <!-- 체크인, 체크아웃 부분 -->
           <div class="check-inorout">
-            <div class="check-in-area">
-              <div class="check-in-square" role="button" tabindex="0" area-expanded="false"
-                   data-testid="structured-search-input-field-split-dates-0">
-                <div class="check-in-and-date">
-                  <div class="check-in-naming" style="font-weight: bold">체크인</div>
-                  <div class="in-date-add">날짜 추가</div>
-                </div>
+            <div class="position-detail">
+              <div class="check-in-area">
+                <div class="check-in-square" role="button" tabindex="0" area-expanded="false"
+                     data-testid="structured-search-input-field-split-dates-0">
+                  <div class="check-in-and-date">
+                    <div class="check-in-naming" style="font-weight: bold">체크인</div>
+                    <div class="in-date-add" style="font-size:14px">날짜 추가</div>
+                  </div>
 
+                </div>
+              </div>
+              <!-- 검색창 구분선 -->
+              <div class="partition"></div>
+
+              <div class="check-out-area">
+                <div class="check-out-square" role="button" tabindex="0" area-expanded="false"
+                     data-testid="structured-search-input-field-split-dates-1">
+                  <div class="check-out-and-date">
+                    <div class="check-out-naming" style="font-weight: bold">체크아웃</div>
+                    <div class="out-date-add" style="font-size:14px">날짜 추가</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- 검색창 구분선 -->
-            <div class="partition"></div>
+            <div class="calendar-view-space">
+              <section>
+                <div class="schedule-select-area">
+                  <div class="detail-partition">
+                    <div id="tabs">
+                      <div class="tab-select-area">
+                        <div class="tab-title">
+                          <div class="select-title-tab" role="tablist">
+                            <button type="button" aria-selected="true" class="date-select" role="tab" style="font-weight: bold">날짜 지정</button>
+                            <button type="button" aria-selected="true" class="month-part" role="tab" style="font-weight: bold">월 단위</button>
+                            <button type="button" aria-selected="true" class="flexible-schedule" role="tab" style="font-weight: bold">유연한 일정</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selection-area">
 
-            <div class="check-out-area">
-              <div class="check-out-square" role="button" tabindex="0" area-expanded="false"
-                   data-testid="structured-search-input-field-split-dates-1">
-                <div class="check-out-and-date">
-                  <div class="check-out-naming" style="font-weight: bold">체크아웃</div>
-                  <div class="out-date-add">날짜 추가</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
 
@@ -172,7 +196,7 @@
                 <div class="guest-select-area">
                   <div class="guest-select-and-add">
                     <div class="guest-naming" style="font-weight: bold">여행자</div>
-                    <div class="guest-add">게스트 추가</div>
+                    <div class="guest-add" style="font-size:14px">게스트 추가</div>
                   </div>
                 </div>
               </div>
@@ -192,6 +216,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Details -->
     <div class="background">

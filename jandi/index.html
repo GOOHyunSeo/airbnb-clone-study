@@ -6,7 +6,6 @@
     <title>에어비엔비 | 휴가지 숙소, 통나무집, 해변가 주택 등</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/airbnb_logo.png" />
     <link href="./index.css" rel="stylesheet" />
-    <script src="../index.js"></script>
   </head>
   <body>
     <!-- 상단메뉴 -->
@@ -21,9 +20,9 @@
         <div class="bottom-banner-and-top-searchbar">
           <div class="airbnb-logo"><img id="logo" src="./images/pngegg.png" width="118px" height="64px"></div>
           <div class="new-page-go">
-            <div class="guesthouse">숙소</div>
-            <div class="activity">체험</div>
-            <div class="on-line-activity">온라인 체험</div>
+            <div class="guesthouse" style="font-size:14px; font-weight:bold;">숙소</div>
+            <div class="activity" style="font-size:14px; font-weight:bold;">체험</div>
+            <div class="on-line-activity" style="font-size:14px; font-weight:bold;">온라인 체험</div>
           </div>
           <div class="your-space-airbnb">
             <div class="your-airbnb">
@@ -51,7 +50,7 @@
         <div class="full-searchbar-space">
           <!-- 여행지 검색 부분 -->
           <div class="travel-spot">
-            <div class="travel-spot-circle">
+            <div class="travel-spot-circle" onclick="showLocalSearchArea()">
               <label class="travel-spot-search">
                 <div class="travel-spot-text-space">
                   <div class="travel-spot-naming" style="font-weight: bold">여행지</div>
@@ -62,6 +61,75 @@
                 </div>
               </label>
 
+            </div>
+            <div class="local-search-area">
+              <section>
+                <div class="local-search-background" style="overflow-y: scroll">
+                  <div class="search-menu">
+                    <div class="map-space">
+                      <div class="name-search">지역으로 검색하기</div>
+                      <div class="map-search">
+                        <div class="full-search-area">
+                          <button class="full-map" aria-pressed="false" type="button"></button>
+                          <div aria-hidden="true">유연한 검색</div>
+                        </div>
+                        <div class="europe-search-area">
+                          <button class="europe-map" aria-pressed="false" type="button"></button>
+                          <div aria-hidden="true">유럽</div>
+                        </div>
+                        <div class="japan-search-area">
+                          <button class="japan-map" aria-pressed="false" type="button"></button>
+                          <div aria-hidden="true">일본</div>
+                        </div>
+                        <div class="eastaisa-search-area">
+                          <button class="eastasia-map" aria-pressed="false" type="button"></button>
+                          <div aria-hidden="true">동남아시아</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="local-name-space">
+                      <div class="local-korea-area">
+                        <div class="naming-korea">한국</div>
+                        <div class="city-button-area">
+                          <div class="korea-city">
+                            <div class="seoul-area"><button class="seoul-button">서울</button></div>
+                            <div class="busan-area"><button class="busan-button">부산</button></div>
+                            <div class="sokcho-area"><button class="sokcho-button">속초</button></div>
+                            <div class="gangreung-area"><button class="gangreung-button">강릉</button></div>
+                            <div class="jeonju-area"><button class="jeonju-button">전주</button></div>
+                            <div class="daegu-area"><button class="daegu-button">대구</button></div>
+                            <div class="gyeongju-area"><button class="gyeongju-button">경주</button></div>
+                            <div class="yeosu-area"><button class="yeosu-button">여수</button></div>
+                            <div class="seogui-area"><button class="seogui-button">서귀포</button></div>
+                            <div class="daejeon-area"><button class="daejeon-button">대전</button></div>
+                            <div class="jeju-area"><button class="jeju-button">제주도</button></div>
+                            <div class="incheon-area"><button class="incheon-button">인천</button></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="local-world-area">
+                        <div class="world-feild">
+                          <div class="land-name">
+                            <div class="land-tap-list" role="tablist">
+                              <button type="button" aria-selected="true" class="all-world-btn" role="tab"><div class="all-world">전 세계</div></button>
+                              <button type="button" aria-selected="true" class="eastasia-btn" role="tab"><div class="eastasia">동아시아</div></button>
+                              <button type="button" aria-selected="true" class="es-asia-btn" role="tab"><div class="es-aisa">동남아시아</div></button>
+                              <button type="button" aria-selected="true" class="europe-btn" role="tab"><div class="europe">유럽</div></button>
+                              <button type="button" aria-selected="true" class="ns-america-btn" role="tab"><div class="ns-america">북남미</div></button>
+                              <button type="button" aria-selected="true" class="oseania-btn" role="tab"><div class="oseania">오세아니아</div></button>
+                              <button type="button" aria-selected="true" class="etc-asia-btn" role="tab"><div class="etc-asia">기타 아시아 지역</div></button>
+                              <button type="button" aria-selected="true" class="africa-btn" role="tab"><div class="africa">아프리카</div></button>
+                            </div>
+                          </div>
+                          <div class="country-name">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
 
@@ -124,6 +192,7 @@
         </div>
       </div>
     </div>
+
     <!-- Details -->
     <div class="background">
       <div class="review__background">
@@ -974,5 +1043,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

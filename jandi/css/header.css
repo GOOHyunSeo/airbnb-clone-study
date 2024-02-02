@@ -3,17 +3,22 @@
   --borderColor: #dddddd;
 }
 
-body {
+/* body {
   height: 150vh;
-}
+} */
 
 /* header */
 header {
   height: 100px;
+}
+.header {
   padding: 0px 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--borderColor);
+}
+.header-experience {
+  padding: 0px 50px;
 }
 .header-width {
   width: 33.3%;

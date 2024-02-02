@@ -71,7 +71,6 @@ body {
 }
 
 footer {
-  height: 60%;
   padding: 50px 80px;
   display: flex;
   flex-direction: column;

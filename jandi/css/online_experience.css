@@ -1,4 +1,4 @@
-.online-logo{
+.online-logo {
   margin: 8px -8px 8px 50px;
 }
 .title-experience {
@@ -7,7 +7,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.title-experience .button-container{
+.title-experience .button-container {
   margin-right: 70px;
 }
 .title-experience .prev-button {
@@ -89,7 +89,7 @@
 .PhotoCoverButton1:hover {
   background-color: #dee2e6;
 }
-.host_title{
+.host_title {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,7 @@
   font-weight: 500;
   margin: 50px 70px 15px 50px;
 }
-.bogi{
+.bogi {
   font-size: 14px;
   font-weight: normal;
   text-decoration: underline;
@@ -188,7 +188,7 @@
   border-color: #333;
   transition: border-color 0.3s ease;
 }
-.host_box{
+.host_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
@@ -196,37 +196,37 @@
   margin-bottom: 15px;
 }
 .host_img1 {
-  background-image: url("images/online_images/host1.jpeg");
+  background-image: url("../images/online_images/host1.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host_img2{
-  background-image: url("images/online_images/host2.jpeg");
+.host_img2 {
+  background-image: url("../images/online_images/host2.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host_img3{
-  background-image: url("images/online_images/host3.jpeg");
+.host_img3 {
+  background-image: url("../images/online_images/host3.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host_img4{
-  background-image: url("images/online_images/host4.jpeg");
+.host_img4 {
+  background-image: url("../images/online_images/host4.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host_img5{
-  background-image: url("images/online_images/host5.jpeg");
+.host_img5 {
+  background-image: url("../images/online_images/host5.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host_img6{
-  background-image: url("images/online_images/host6.jpeg");
+.host_img6 {
+  background-image: url("../images/online_images/host6.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
@@ -249,23 +249,23 @@
   stroke: white;
   stroke-width: 2;
 }
-.info1{
+.info1 {
   margin: 7px 0;
   font-size: 13px;
   font-weight: bold;
   padding-top: 5px;
 }
-.info2{
+.info2 {
   font-size: 15px;
   font-weight: 350;
   color: black;
 }
-.info3{
+.info3 {
   font-size: 16px;
   font-weight: 550;
   padding-top: 8px;
 }
-.best_title{
+.best_title {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
@@ -274,42 +274,42 @@
   margin: 100px 70px 15px 50px;
 }
 .best_img1 {
-  background-image: url("images/online_images/best_1.jpeg");
+  background-image: url("../images/online_images/best_1.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.best_img2{
-  background-image: url("images/online_images/best_2.jpeg");
+.best_img2 {
+  background-image: url("../images/online_images/best_2.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.best_img3{
-  background-image: url("images/online_images/best_3.jpeg");
+.best_img3 {
+  background-image: url("../images/online_images/best_3.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.best_img4{
-  background-image: url("images/online_images/best_4.jpeg");
+.best_img4 {
+  background-image: url("../images/online_images/best_4.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.best_img5{
-  background-image: url("images/online_images/best_5.jpeg");
+.best_img5 {
+  background-image: url("../images/online_images/best_5.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.best_img6{
-  background-image: url("images/online_images/best_6.jpeg");
+.best_img6 {
+  background-image: url("../images/online_images/best_6.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.time_title{
+.time_title {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
@@ -317,14 +317,14 @@
   font-weight: 500;
   margin: 100px 70px 15px 50px;
 }
-.six-time_box{
+.six-time_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   padding: 0 70px 0 50px;
   margin-bottom: 15px;
 }
-.time_bogi{
+.time_bogi {
   font-size: 16px;
   font-weight: normal;
   text-decoration: underline;
@@ -364,20 +364,20 @@
 .time_box .info {
   margin-left: 15px;
 }
-.time_info1{
+.time_info1 {
   margin-top: -15px;
   margin-bottom: 5px;
   font-size: 12px;
   font-weight: 300px;
   padding-top: 15px;
 }
-.time_info2{
+.time_info2 {
   margin-bottom: 5px;
   font-size: 14px;
   font-weight: 350;
   color: black;
 }
-.time_info3{
+.time_info3 {
   font-size: 14px;
   font-weight: 500;
   padding-top: 5px;
@@ -390,7 +390,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 12px;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 .time_box .time_button::after {
   content: attr(data-time);
@@ -403,8 +403,8 @@
   font-size: 12px;
   font-weight: normal;
 }
-.organization_title{
-    font-size: 22px;
+.organization_title {
+  font-size: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -412,37 +412,37 @@
   margin: 100px 70px 15px 50px;
 }
 .organization_img1 {
-  background-image: url("images/online_images/organization_1.jpeg");
+  background-image: url("../images/online_images/organization_1.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.organization_img2{
-  background-image: url("images/online_images/organization_2.jpeg");
+.organization_img2 {
+  background-image: url("../images/online_images/organization_2.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.organization_img3{
-  background-image: url("images/online_images/organization_3.jpeg");
+.organization_img3 {
+  background-image: url("../images/online_images/organization_3.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.organization_img4{
-  background-image: url("images/online_images/organization_4.jpeg");
+.organization_img4 {
+  background-image: url("../images/online_images/organization_4.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.organization_img5{
-  background-image: url("images/online_images/organization_5.jpeg");
+.organization_img5 {
+  background-image: url("../images/online_images/organization_5.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.organization_img6{
-  background-image: url("images/online_images/organization_6.jpeg");
+.organization_img6 {
+  background-image: url("../images/online_images/organization_6.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
@@ -467,7 +467,7 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 8px; 
+  top: 8px;
   width: 100%; /* 밑줄의 길이, 원하는 만큼 조절 가능 */
   border-bottom: 2px solid; /* 밑줄의 두께와 색상 설정 */
   transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
@@ -483,7 +483,7 @@
   cursor: pointer;
   margin-top: 10px;
 }
-.weekend_title{
+.weekend_title {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
@@ -492,49 +492,49 @@
   margin: 100px 70px 15px 50px;
 }
 .weekend_img1 {
-  background-image: url("images/online_images/weekend_1.jpeg");
+  background-image: url("../images/online_images/weekend_1.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.weekend_img2{
-  background-image: url("images/online_images/weekend_2.jpeg");
+.weekend_img2 {
+  background-image: url("../images/online_images/weekend_2.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.weekend_img3{
-  background-image: url("images/online_images/weekend_3.jpeg");
+.weekend_img3 {
+  background-image: url("../images/online_images/weekend_3.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.weekend_img4{
-  background-image: url("images/online_images/weekend_4.jpeg");
+.weekend_img4 {
+  background-image: url("../images/online_images/weekend_4.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.weekend_img5{
-  background-image: url("images/online_images/weekend_5.jpeg");
+.weekend_img5 {
+  background-image: url("../images/online_images/weekend_5.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.weekend_img6{
-  background-image: url("images/online_images/weekend_6.jpeg");
+.weekend_img6 {
+  background-image: url("../images/online_images/weekend_6.jpeg");
   height: 250px;
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.more{
+.more {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
   margin-top: 70px;
 }
-.more-button{
+.more-button {
   padding: 14px 24px;
   font-size: 16px;
   background-color: #222222;
@@ -544,6 +544,6 @@
   cursor: pointer;
   border-radius: 10px;
 }
-.more-button:hover{
+.more-button:hover {
   background-color: black;
 }

@@ -8,7 +8,7 @@ html,
 body {
   /* width: 100%;
   height: 100%; */
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -31,86 +31,82 @@ body {
 
 /* 사이트 상단 "에어비앤비에서 사랑받고 있는~" 부분 배너 */
 .page-top-banner {
-    height: 60px;
-        background-color: #f5f5f5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        text-decoration: underline;
+  height: 60px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
 /*배너 바로 아래 영역 - 검색창 바로 위*/
 .bottom-banner-and-top-searchbar {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .airbnb-logo {
-    width: 307px;
-    height: 80px;
-    float: left;
-    padding: 0px 40px;
+  width: 307px;
+  height: 80px;
+  float: left;
+  padding: 0px 40px;
 }
 .new-page-go {
-    width: 300px;
-    height: 80px;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    padding: 0px 24px;
-    justify-content: space-between;
+  width: 300px;
+  height: 80px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+  justify-content: space-between;
 }
 
 .your-space-airbnb {
-    width: 400px;
-    height: 80px;
-    align-items: center;
-    line-height: 80px;
-    float: right;
-    display: flex;
+  width: 400px;
+  height: 80px;
+  align-items: center;
+  line-height: 80px;
+  float: right;
+  display: flex;
 }
 
 .guesthouse,
 .activity,
 .on-line-activity {
-    text-align: center;
+  text-align: center;
 }
 
 .your-airbnb {
-    display: flex;
-
+  display: flex;
 }
 
 .web-logo {
-    margin-left: 20px;
-    margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .login-button {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    border-radius: 50px / 50px;
-    border: 1px solid #e0e0e0;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50px / 50px;
+  border: 1px solid #e0e0e0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .login-menu {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .profile-area {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-
-
 
 .background {
   width: 100%;
@@ -158,7 +154,7 @@ body {
 .crown__L {
   width: 84.97px; /* 이미지 컨테이너의 너비 */
   height: 120px; /* 이미지 컨테이너의 높이 */
-  background-image: url("./images/crown-l.jpg"); /* 이미지 파일 경로 */
+  background-image: url("../images/crown-l.jpg"); /* 이미지 파일 경로 */
   background-size: cover; /* 이미지를 컨테이너에 맞게 조절 */
   background-position: center; /* 이미지를 가운데 정렬 */
   /* margin-top: 45px; */
@@ -178,7 +174,7 @@ body {
 .crown__R {
   width: 84.96px; /* 이미지 컨테이너의 너비 */
   height: 120px; /* 이미지 컨테이너의 높이 */
-  background-image: url("./images/crown-r.jpg"); /* 이미지 파일 경로 */
+  background-image: url("../images/crown-r.jpg"); /* 이미지 파일 경로 */
   background-size: cover; /* 이미지를 컨테이너에 맞게 조절 */
   background-position: center; /* 이미지를 가운데 정렬 */
   margin-left: 10px;
@@ -585,7 +581,7 @@ span {
 .review__1__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-1.webp");
+  background-image: url("../images/1-1.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -694,7 +690,7 @@ span {
 .review__2__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-2.webp");
+  background-image: url("../images/1-2.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -803,7 +799,7 @@ span {
 .review__3__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-1.webp");
+  background-image: url("../images/1-1.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -898,7 +894,7 @@ span {
 .review__4__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-1.webp");
+  background-image: url("../images/1-1.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -993,7 +989,7 @@ span {
 .review__5__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-5.webp");
+  background-image: url("../images/1-5.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -1088,7 +1084,7 @@ span {
 .review__6__box__jpg {
   width: 48px;
   height: 48px;
-  background-image: url("./images/1-6.webp");
+  background-image: url("../images/1-6.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;
@@ -1238,7 +1234,7 @@ span {
 .map__jpg {
   width: 1120px;
   height: 480px;
-  background-image: url("./images/map.png");
+  background-image: url("../images/map.png");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   cursor: pointer;
@@ -1268,7 +1264,7 @@ span {
 .host__jpg {
   width: 64px;
   height: 64px;
-  background-image: url("./images/2-1.webp");
+  background-image: url("../images/2-1.webp");
   background-size: cover; /* 이미지 크기 조절 방법 설정 (cover, contain 등) */
   background-position: center; /* 이미지 위치 설정 (center, top, right 등) */
   border-radius: 50%;

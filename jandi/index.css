@@ -2291,3 +2291,67 @@ span {
   cursor: pointer;
   margin-top: 10px;
 }
+.weekend_title{
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  margin: 100px 70px 15px 50px;
+}
+.weekend_img1 {
+  background-image: url("images/online_images/weekend_1.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.weekend_img2{
+  background-image: url("images/online_images/weekend_2.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.weekend_img3{
+  background-image: url("images/online_images/weekend_3.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.weekend_img4{
+  background-image: url("images/online_images/weekend_4.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.weekend_img5{
+  background-image: url("images/online_images/weekend_5.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.weekend_img6{
+  background-image: url("images/online_images/weekend_6.jpeg");
+  height: 250px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+}
+.more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 70px;
+}
+.more-button{
+  padding: 14px 24px;
+  font-size: 16px;
+  background-color: #222222;
+  margin-bottom: 40px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.more-button:hover{
+  background-color: black;
+}

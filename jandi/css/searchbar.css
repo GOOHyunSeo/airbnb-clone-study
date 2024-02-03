@@ -9,10 +9,7 @@
 }
 
 .partition {
-    flex: 0 0 0;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 0px;
+
 }
 
 /* Full search bar space styles */
@@ -55,10 +52,12 @@
     display: flex;
     align-items: center;
     border-radius: 50px / 50px;
-
 }
 .travel-spot-circle:hover {
     background-color: #E6E6E6;
+    .travel-spot-text-space {
+        border: none;
+    }
 }
 
 .travel-spot-search {
@@ -66,6 +65,13 @@
     align-items: center;
     cursor: pointer;
     margin-left: 20px;
+    width: 100%;
+}
+
+.travel-spot-text-space {
+    width: 100%;
+    border-right: 1px solid;
+    border-right-color: #E6E6E6;
 }
 
 .travel-spot-naming {
@@ -90,7 +96,13 @@
 .check-in-area,
 .check-out-area {
     flex: 1;
+}
 
+.check-in-and-date,
+.check-out-and-date {
+    width: 100%;
+    border-right: 1px solid;
+    border-right-color: #E6E6E6;
 }
 
 .check-in-square,
@@ -105,10 +117,17 @@
 
 .check-in-square:hover {
     background-color: #E6E6E6;
+    cursor: pointer;
+    .check-in-and-date{
+        border: none;
+    }
 }
 .check-out-square:hover {
     background-color: #E6E6E6;
     cursor: pointer;
+    .check-out-and-date{
+        border: none;
+    }
 }
 
 .check-in-naming,
@@ -141,6 +160,7 @@
     display: flex;
     align-items: center;
     border-radius: 50px / 50px;
+    cursor: pointer;
 }
 
 .guest-select-circle:hover {
@@ -192,7 +212,9 @@
 .name-search {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 40px;
 }
 
 .map-space {
@@ -236,7 +258,16 @@ button {
 .eastasia-map {
   width: 94.6px;
   height: 94.6px;
+  margin-bottom: 10px;
   /* Add background images for map buttons */
+}
+
+.world,
+.europe,
+.japan,
+.eastasia{
+    border: 1px solid #dddddd;
+    border-radius: 10px / 10px;
 }
 
 .local-name-space {
@@ -246,7 +277,8 @@ button {
 .naming-korea {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-bottom: 40px;
 }
 
 .city-button-area {
@@ -374,11 +406,23 @@ button {
   .date-select,
   .month-part,
   .flexible-schedule {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    background-color: #E6E6E6;
     border-radius: 50px / 50px;
     padding: 10px;
   }
+
+  .selection-area {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .calendar-area {
+    margin-top: 20px;
+
+  }
+
 
 /* Adjustments for responsiveness as needed */
 @media (max-width: 768px) {

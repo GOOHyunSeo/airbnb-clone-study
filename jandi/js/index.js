@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 클릭된 요소가 travel-spot-circle이나 check-in-square이 아니라면 원래의 상태로 복원합니다.
         if (!event.target.closest(".travel-spot-circle") && !event.target.closest(".check-in-square")
         && !event.target.closest(".check-out-square") && !event.target.closest(".guest-select-circle")
-        && !event.target.closest(".local-search-area")) {
+        && !event.target.closest(".local-search-area") && !event.target.closest(".calendar-view-space")) {
             fullSearchbarSpace.style.backgroundColor = originalBackgroundColor;
             travelSpotCircle.style.backgroundColor = originalCircleBackgroundColor;
             travelSpotCircle.style.boxShadow = originalCircleBoxShadow;
@@ -162,9 +162,10 @@ document.addEventListener("click", function (event) {
 document.addEventListener("click", function(event){
     var calendarViewSpace = document.querySelector(".calendar-view-space");
 
-    if(event.target.closest(".check-in-square")){
+    if(event.target.closest(".check-in-square") || event.target.closest(".check-out-square")){
         calendarViewSpace.style.display = "block";
-    } else if(!event.target.closest(".check-in-square") && !event.target.closest(".calendar-view-space")) {
+    } else if(!event.target.closest(".check-in-square") && !event.target.closest(".calendar-view-space")
+    && !event.target.closest(".check-out-square")) {
         calendarViewSpace.style.display = "none";
     }
 });
@@ -182,20 +183,29 @@ document.addEventListener('DOMContentLoaded', function() {
             var originalBackgroundColor = tabTitle.style.backgroundColor;
 
             dateSelectButton.addEventListener('click', function() {
-                // 날짜 지정 탭 버튼이 클릭되었을 때 실행될 코드
-                console.log('날짜 지정 탭이 클릭되었습니다.');
-                // 추가로 원하는 동작을 여기에 작성하세요
+                dateSelectButton.style.backgroundColor = "#FFFFFF";
+                dateSelectButton.style.border = "1px solid #dddddd";
+                monthPartButton.style.backgroundColor = "#E6E6E6";
+                monthPartButton.style.border = "none";
+                flexibleScheduleButton.style.backgroundColor = "#E6E6E6";
+                flexibleScheduleButton.style.border = "none";
             });
 
             monthPartButton.addEventListener('click', function() {
-                // 월 단위 탭 버튼이 클릭되었을 때 실행될 코드
-                console.log('월 단위 탭이 클릭되었습니다.');
-                // 추가로 원하는 동작을 여기에 작성하세요
+                monthPartButton.style.backgroundColor = "#FFFFFF";
+                monthPartButton.style.border = "1px solid #dddddd";
+                dateSelectButton.style.backgroundColor = "#E6E6E6";
+                dateSelectButton.style.border = "none";
+                flexibleScheduleButton.style.backgroundColor = "#E6E6E6";
+                flexibleScheduleButton.style.border = "none";
             });
 
             flexibleScheduleButton.addEventListener('click', function() {
-                // 유연한 일정 탭 버튼이 클릭되었을 때 실행될 코드
-                console.log('유연한 일정 탭이 클릭되었습니다.');
-                // 추가로 원하는 동작을 여기에 작성하세요
+                flexibleScheduleButton.style.backgroundColor = "#FFFFFF";
+                flexibleScheduleButton.style.border = "1px solid #dddddd";
+                monthPartButton.style.backgroundColor = "#E6E6E6";
+                monthPartButton.style.border = "none";
+                dateSelectButton.style.backgroundColor = "#E6E6E6";
+                dateSelectButton.style.border = "none";
             });
 });

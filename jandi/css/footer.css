@@ -163,6 +163,9 @@ body {
 .footer-experience {
   padding: 50px 50px;
 }
+.footer-home {
+  padding: 50px 70px;
+}
 .footer__nav {
   display: grid;
   padding-bottom: 50px;

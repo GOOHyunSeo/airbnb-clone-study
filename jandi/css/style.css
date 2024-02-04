@@ -11,8 +11,9 @@
 /* 장성규 */
 @import "./searchbar.css";
 
-/* 김재협 */
-@import "./common.css";
-
 /* 조규은 */
 @import "./index.css";
+
+/* 김재협 */
+@import "./reset.css";
+@import "./common.css";

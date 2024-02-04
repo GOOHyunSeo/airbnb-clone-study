@@ -26,15 +26,666 @@
     <link href="../css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!---- Header 상단 메뉴, 검색창  ---->
+    <!------------------------ Header 상단 메뉴, 검색창  ------------------------>
     <header>
-      <div class="top-bar"></div>
-      <div class="search-bar"></div>
+      <div class="logo header-width">
+        <img
+          class="logo__icon"
+          src="../images/pngegg.png"
+          alt="airbnb_logo"
+          height="80"
+          width="140"
+        />
+      </div>
+      <div class="header-width">
+        <div class="search-bar">
+          <span class="search-bar-select">어디든지</span>
+          <span class="search-bar-select">언제든 일주일</span>
+          <span class="search-bar-select">게스트 추가</span>
+          <button class="search-bar-button">
+            <img
+              src="../images/magnifying-glass.png"
+              alt="search"
+              height="15"
+              width="15"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="settings header-width">
+        <div class="settings__host">당신의 공간을 에어비앤비하세요</div>
+        <div class="settings__globe">
+          <img
+            src="../images/world-wide-web.png"
+            alt="globe"
+            height="17"
+            width="17"
+          />
+        </div>
+        <div class="setting__user">
+          <img
+            src="../images/login-menu.png"
+            alt="menu"
+            height="20"
+            width="20"
+          />
+          <img
+            src="../images/login-icon.png"
+            alt="icon"
+            height="30"
+            width="30"
+          />
+        </div>
+      </div>
     </header>
-    <!----  Main메인페이지, 카테고리   ---->
+    <!----------------------------  Main메인페이지, 카테고리   -------------------->
     <main>
-      <div class="category">
-        <div></div>
+      <!------------------  Main__category  ------------------>
+      <div class="category__container">
+        <div class="category__wrapper">
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/beach.jpeg" alt="해변" />
+            <p>해변근처</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/han-ok.jpeg" alt="한옥" />
+            <p>한옥</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/pool.jpeg" alt="멋진 수영장" />
+            <p>멋진 수영장</p> </label
+          ><label class="category__wrapper__detail">
+            <img src="../images/images_home/Atype.jpeg" alt="A자형 주택" />
+            <p>A자형 주택</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/hotplace.jpeg" alt="인기 급상승" />
+            <p>인기 급상승</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/room.jpeg" alt="방" />
+            <p>방</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/pool.jpeg" alt="최고의 전망" />
+            <p>멋진 수영장</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/country.jpeg" alt="한적한 시골" />
+            <p>한적한 시골</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/camping.jpeg" alt="캠핑장" />
+            <p>캠핑장</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/nationalpark.jpeg" alt="국립공원" />
+            <p>국립공원</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/farm.jpeg" alt="농장" />
+            <p>농장</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/ski.jpeg" alt="스키" />
+            <p>스키</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/castle.jpeg" alt="캐슬" />
+            <p>캐슬</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img
+              src="../images/images_home/crazyspace.jpeg"
+              alt="기상천외한 숙소"
+            />
+            <p>기상천외한 숙소</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img
+              src="../images/images_home/beachside.jpeg"
+              alt="해변 바로 앞"
+            />
+            <p>해변 바로 앞</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/creative.jpeg" alt="창작 공간" />
+            <p>창작 공간</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img
+              src="../images/images_home/natural.jpeg"
+              alt="속세를 벗어난 숙소"
+            />
+            <p>속세를 벗어난 숙소</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/ryokan.jpeg" alt="료칸" />
+            <p>료칸</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/mini.jpeg" alt="초소형 주택" />
+            <p>초소형 주택</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/lake.jpeg" alt="호수 근처" />
+            <p>호수 근처</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/design.jpeg" alt="디자인" />
+            <p>디자인</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/tropical.jpeg" alt="열대 지역" />
+            <p>열대 지역</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/cave.jpeg" alt="동굴" />
+            <p>동굴</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/arctic.jpeg" alt="북극" />
+            <p>북극</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/wine.jpeg" alt="와인 농장" />
+            <p>와인 농장</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/windmill.jpeg" alt="풍차" />
+            <p>풍차</p>
+          </label>
+          <label class="category__wrapper__detail">
+            <img src="../images/images_home/treehouse.jpeg" alt="트리하우스" />
+            <p>트리하우스</p>
+          </label>
+        </div>
+      </div>
+      <!------------------  Main__room  ------------------>
+      <div class="room">
+        <div class="room__container">
+          <!-- room1 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide01" checked />
+            <input type="radio" name="slide" id="slide02" />
+            <input type="radio" name="slide" id="slide03" />
+            <input type="radio" name="slide" id="slide04" />
+            <input type="radio" name="slide" id="slide05" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide05" class="room__left"></label>
+                    <img src="../images/images_home/room1-1.webp" alt="" />
+                    <label for="slide02" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide01" class="room__left"></label>
+                    <img src="../images/images_home/room1-2.webp" alt="" />
+                    <label for="slide03" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide02" class="room__left"></label>
+                    <img src="../images/images_home/room1-3.webp" alt="" />
+                    <label for="slide04" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide03" class="room__left"></label>
+                    <img src="../images/images_home/room1-4.webp" alt="" />
+                    <label for="slide05" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide04" class="room__left"></label>
+                    <img src="../images/images_home/room1-5.webp" alt="" />
+                    <label for="slide01" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room2 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide21" checked />
+            <input type="radio" name="slide" id="slide22" />
+            <input type="radio" name="slide" id="slide23" />
+            <input type="radio" name="slide" id="slide24" />
+            <input type="radio" name="slide" id="slide25" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide25" class="room__left"></label>
+                    <img src="../images/images_home/room2-1.webp" alt="" />
+                    <label for="slide22" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide21" class="room__left"></label>
+                    <img src="../images/images_home/room2-2.webp" alt="" />
+                    <label for="slide23" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide22" class="room__left"></label>
+                    <img src="../images/images_home/room2-3.webp" alt="" />
+                    <label for="slide24" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide23" class="room__left"></label>
+                    <img src="../images/images_home/room2-4.webp" alt="" />
+                    <label for="slide25" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide24" class="room__left"></label>
+                    <img src="../images/images_home/room2-5.webp" alt="" />
+                    <label for="slide21" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room3 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide31" checked />
+            <input type="radio" name="slide" id="slide32" />
+            <input type="radio" name="slide" id="slide33" />
+            <input type="radio" name="slide" id="slide34" />
+            <input type="radio" name="slide" id="slide35" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide35" class="room__left"></label>
+                    <img src="../images/images_home/room3-1.webp" alt="" />
+                    <label for="slide32" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide31" class="room__left"></label>
+                    <img src="../images/images_home/room3-2.webp" alt="" />
+                    <label for="slide33" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide32" class="room__left"></label>
+                    <img src="../images/images_home/room3-3.webp" alt="" />
+                    <label for="slide34" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide33" class="room__left"></label>
+                    <img src="../images/images_home/room3-4.webp" alt="" />
+                    <label for="slide35" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide34" class="room__left"></label>
+                    <img src="../images/images_home/room3-5.webp" alt="" />
+                    <label for="slide31" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room4 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide41" checked />
+            <input type="radio" name="slide" id="slide42" />
+            <input type="radio" name="slide" id="slide43" />
+            <input type="radio" name="slide" id="slide44" />
+            <input type="radio" name="slide" id="slide45" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide45" class="room__left"></label>
+                    <img src="../images/images_home/room4-1.webp" alt="" />
+                    <label for="slide42" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide41" class="room__left"></label>
+                    <img src="../images/images_home/room4-2.webp" alt="" />
+                    <label for="slide43" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide42" class="room__left"></label>
+                    <img src="../images/images_home/room4-3.webp" alt="" />
+                    <label for="slide44" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide43" class="room__left"></label>
+                    <img src="../images/images_home/room4-4.webp" alt="" />
+                    <label for="slide45" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide44" class="room__left"></label>
+                    <img src="../images/images_home/room4-5.webp" alt="" />
+                    <label for="slide41" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room5 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide51" checked />
+            <input type="radio" name="slide" id="slide52" />
+            <input type="radio" name="slide" id="slide53" />
+            <input type="radio" name="slide" id="slide54" />
+            <input type="radio" name="slide" id="slide55" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide55" class="room__left"></label>
+                    <img src="../images/images_home/room5-1.webp" alt="" />
+                    <label for="slide52" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide51" class="room__left"></label>
+                    <img src="../images/images_home/room5-2.webp" alt="" />
+                    <label for="slide53" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide52" class="room__left"></label>
+                    <img src="../images/images_home/room5-3.webp" alt="" />
+                    <label for="slide54" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide53" class="room__left"></label>
+                    <img src="../images/images_home/room5-4.webp" alt="" />
+                    <label for="slide55" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide54" class="room__left"></label>
+                    <img src="../images/images_home/room5-5.webp" alt="" />
+                    <label for="slide51" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room6 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide61" checked />
+            <input type="radio" name="slide" id="slide62" />
+            <input type="radio" name="slide" id="slide63" />
+            <input type="radio" name="slide" id="slide64" />
+            <input type="radio" name="slide" id="slide65" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide65" class="room__left"></label>
+                    <img src="../images/images_home/room6-1.webp" alt="" />
+                    <label for="slide62" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide61" class="room__left"></label>
+                    <img src="../images/images_home/room6-2.webp" alt="" />
+                    <label for="slide63" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide62" class="room__left"></label>
+                    <img src="../images/images_home/room6-3.webp" alt="" />
+                    <label for="slide64" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide63" class="room__left"></label>
+                    <img src="../images/images_home/room6-4.webp" alt="" />
+                    <label for="slide65" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide64" class="room__left"></label>
+                    <img src="../images/images_home/room6-5.webp" alt="" />
+                    <label for="slide61" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room7 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide71" checked />
+            <input type="radio" name="slide" id="slide72" />
+            <input type="radio" name="slide" id="slide73" />
+            <input type="radio" name="slide" id="slide74" />
+            <input type="radio" name="slide" id="slide75" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide75" class="room__left"></label>
+                    <img src="../images/images_home/room7-1.webp" alt="" />
+                    <label for="slide72" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide71" class="room__left"></label>
+                    <img src="../images/images_home/room7-2.webp" alt="" />
+                    <label for="slide73" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide72" class="room__left"></label>
+                    <img src="../images/images_home/room7-3.webp" alt="" />
+                    <label for="slide74" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide73" class="room__left"></label>
+                    <img src="../images/images_home/room7-4.webp" alt="" />
+                    <label for="slide75" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide74" class="room__left"></label>
+                    <img src="../images/images_home/room7-5.webp" alt="" />
+                    <label for="slide71" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room8 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide81" checked />
+            <input type="radio" name="slide" id="slide82" />
+            <input type="radio" name="slide" id="slide83" />
+            <input type="radio" name="slide" id="slide84" />
+            <input type="radio" name="slide" id="slide85" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide85" class="room__left"></label>
+                    <img src="../images/images_home/room8-1.webp" alt="" />
+                    <label for="slide82" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide81" class="room__left"></label>
+                    <img src="../images/images_home/room8-2.webp" alt="" />
+                    <label for="slide83" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide82" class="room__left"></label>
+                    <img src="../images/images_home/room8-3.webp" alt="" />
+                    <label for="slide84" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide83" class="room__left"></label>
+                    <img src="../images/images_home/room8-4.webp" alt="" />
+                    <label for="slide85" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide84" class="room__left"></label>
+                    <img src="../images/images_home/room8-5.webp" alt="" />
+                    <label for="slide81" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room9 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide91" checked />
+            <input type="radio" name="slide" id="slide92" />
+            <input type="radio" name="slide" id="slide93" />
+            <input type="radio" name="slide" id="slide94" />
+            <input type="radio" name="slide" id="slide95" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide95" class="room__left"></label>
+                    <img src="../images/images_home/room9-1.webp" alt="" />
+                    <label for="slide92" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide91" class="room__left"></label>
+                    <img src="../images/images_home/room9-2.webp" alt="" />
+                    <label for="slide93" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide92" class="room__left"></label>
+                    <img src="../images/images_home/room9-3.webp" alt="" />
+                    <label for="slide94" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide93" class="room__left"></label>
+                    <img src="../images/images_home/room9-4.webp" alt="" />
+                    <label for="slide95" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide94" class="room__left"></label>
+                    <img src="../images/images_home/room9-5.webp" alt="" />
+                    <label for="slide91" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- room10 -->
+          <div class="room">
+            <input type="radio" name="slide" id="slide101" checked />
+            <input type="radio" name="slide" id="slide102" />
+            <input type="radio" name="slide" id="slide103" />
+            <input type="radio" name="slide" id="slide104" />
+            <input type="radio" name="slide" id="slide105" />
+
+            <div class="room__slidewrap">
+              <ul class="room__slidelist">
+                <li class="room_photo">
+                  <div>
+                    <label for="slide105" class="room__left"></label>
+                    <img src="../images/images_home/room10-1.webp" alt="" />
+                    <label for="slide102" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide101" class="room__left"></label>
+                    <img src="../images/images_home/room10-2.webp" alt="" />
+                    <label for="slide103" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide102" class="room__left"></label>
+                    <img src="../images/images_home/room10-3.webp" alt="" />
+                    <label for="slide104" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide103" class="room__left"></label>
+                    <img src="../images/images_home/room10-4.webp" alt="" />
+                    <label for="slide105" class="room__right"></label>
+                  </div>
+                </li>
+                <li class="room_photo">
+                  <div>
+                    <label for="slide104" class="room__left"></label>
+                    <img src="../images/images_home/room10-5.webp" alt="" />
+                    <label for="slide101" class="room__right"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- <div class="recommendation-for-next-trip"></div> -->
     </main>

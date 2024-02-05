@@ -142,3 +142,8 @@ button {
   overflow: visible;
   cursor: pointer;
 }
+
+a {
+  color: #717171;
+  text-decoration-line: none;
+}

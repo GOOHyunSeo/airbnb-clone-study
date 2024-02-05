@@ -124,7 +124,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // 클릭된 요소가 travel-spot-circle이나 check-in-square이 아니라면 원래의 상태로 복원합니다.
         if (!event.target.closest(".travel-spot-circle") && !event.target.closest(".check-in-square")
         && !event.target.closest(".check-out-square") && !event.target.closest(".guest-select-circle")
-        && !event.target.closest(".local-search-area") && !event.target.closest(".calendar-view-space")) {
+        && !event.target.closest(".local-search-area") && !event.target.closest(".calendar-view-space")
+        && !event.target.closest(".guest-control-space")){
             fullSearchbarSpace.style.backgroundColor = originalBackgroundColor;
             travelSpotCircle.style.backgroundColor = originalCircleBackgroundColor;
             travelSpotCircle.style.boxShadow = originalCircleBoxShadow;
@@ -170,6 +171,19 @@ document.addEventListener("click", function(event){
     }
 });
 
+/*
+//게스트 선택란 클릭시 이벤트
+document.addEventListener("click", function(event){
+    var guestControlSpace = document.querySelector(".guest-control-space");
+
+    if(event.target.closest(".guest-select-circle") {
+        guestControlSpace.style.display = "block";
+    } else if(!event.target.closest(".guest-control-space") && !event.target.closest(".guest-select-circle"){
+        guestControlSpace.style.display = "none";
+    }
+});
+*/
+
 //체크인, 아웃 날짜선택 탭 클릭
 document.addEventListener('DOMContentLoaded', function() {
             // DOM이 로드된 후에 실행될 코드
@@ -208,4 +222,119 @@ document.addEventListener('DOMContentLoaded', function() {
                 dateSelectButton.style.backgroundColor = "#E6E6E6";
                 dateSelectButton.style.border = "none";
             });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var buttonTabOne = document.querySelector('.date-select');
+  var buttonTabTwo = document.querySelector('.month-part');
+  var buttonTabThree = document.querySelector('.flexible-schedule');
+
+  var tabOneContent = document.querySelector('.tab1');
+  var tabTwoContent = document.querySelector('.tab2');
+  var tabThreeContent = document.querySelector('.tab3');
+
+  var calendarViewSpace = document.querySelector(".calendar-view-space");
+
+  buttonTabOne.addEventListener("click", function () {
+    tabOneContent.style.display = "block"
+    tabTwoContent.style.display = "none"
+    tabThreeContent.style.display = "none"
+
+    calendarViewSpace.style.height = '';
+  });
+
+  buttonTabTwo.addEventListener("click", function () {
+    tabTwoContent.style.display = "block"
+    tabOneContent.style.display = "none"
+    tabThreeContent.style.display = "none"
+
+    calendarViewSpace.style.height = '';
+  });
+
+  buttonTabThree.addEventListener("click", function () {
+      tabThreeContent.style.display = "block"
+      tabOneContent.style.display = "none"
+      tabTwoContent.style.display = "none"
+
+      calendarViewSpace.style.height = "480px";
+    });
+});
+
+//지역 검색 영역 가로 스크롤
+document.addEventListener('DOMContentLoaded', function() {
+    var landTapList = document.querySelector('.land-tap-list');
+    var isMouseDown = false;
+    var startX, scrollLeft;
+
+    landTapList.addEventListener('mousedown', function(e) {
+        isMouseDown = true;
+        startX = e.pageX - landTapList.offsetLeft;
+        scrollLeft = landTapList.scrollLeft;
+    });
+
+    landTapList.addEventListener('mouseleave', function() {
+        isMouseDown = false;
+    });
+
+    landTapList.addEventListener('mouseup', function() {
+        isMouseDown = false;
+    });
+
+    landTapList.addEventListener('mousemove', function(e) {
+        if (!isMouseDown) return;
+        e.preventDefault();
+        var x = e.pageX - landTapList.offsetLeft;
+        var walk = (x - startX) * 2;
+        landTapList.scrollLeft = scrollLeft - walk;
+    });
+});
+
+
+//유연한 일정 영역 가로 스크롤
+document.addEventListener('DOMContentLoaded', function() {
+    var monthCollection = document.querySelector('.month-collection');
+    var isMouseDown = false;
+    var startX, scrollLeft;
+
+    monthCollection.addEventListener('mousedown', function(e) {
+        isMouseDown = true;
+        startX = e.pageX - monthCollection.offsetLeft;
+        scrollLeft = monthCollection.scrollLeft;
+    });
+
+    monthCollection.addEventListener('mouseleave', function() {
+        isMouseDown = false;
+    });
+
+    monthCollection.addEventListener('mouseup', function() {
+        isMouseDown = false;
+    });
+
+    monthCollection.addEventListener('mousemove', function(e) {
+        if (!isMouseDown) return;
+        e.preventDefault();
+        var x = e.pageX - monthCollection.offsetLeft;
+        var walk = (x - startX) * 2;
+        monthCollection.scrollLeft = scrollLeft - walk;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var buttons = document.querySelectorAll('.land-tap-list button');
+
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // 모든 버튼 초기화
+      buttons.forEach(function(btn) {
+        btn.style.color = ''; // 기본 텍스트 색상으로 초기화
+        btn.style.borderBottom = ''; // 기본 border 초기화
+        btn.style.fontWeight = ''; // 기본 굵기 초기화
+      });
+
+      // 클릭한 버튼 스타일 변경
+      button.style.color = '#222222'; // 텍스트 색상 변경
+      button.style.fontWeight = "bold";
+      button.style.borderBottom = '2px solid #000000'; // border-bottom 스타일 변경
+    });
+  });
 });

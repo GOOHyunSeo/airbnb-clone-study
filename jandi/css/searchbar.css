@@ -140,8 +140,9 @@
 .in-date-add,
 .out-date-add {
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #888888;
+    margin-top:3px;
 }
 
 /* Guest select styles */
@@ -175,8 +176,9 @@
 
 .guest-add {
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #888888;
+    margin-top:3px;
 }
 
 .search-guest-button {
@@ -193,7 +195,7 @@
 
 .local-search-area {
     position: absolute;
-    top: calc(100% + 5px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
+    top: calc(100% + 10px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
     left: 0;
     width: 500px;
     height: 540px;
@@ -206,7 +208,10 @@
 
 
 .local-search-background {
+    height: 480px;
     margin-top: 20px;
+    overflow-y: scroll;
+
 }
 
 .name-search {
@@ -272,6 +277,7 @@ button {
 
 .local-name-space {
   margin-top: 30px;
+  padding: 15px;
 }
 
 .naming-korea {
@@ -338,21 +344,59 @@ button {
  }
 
 .land-name {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
+.land-name button {
+    font-size: 14px;
+    font-family: 'Circular', sans-serif; /* 'Circular' 폰트가 사용 가능한 경우 사용, 아니면 sans-serif 대체 */
+    color: #717171;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+/* 선택된(활성화된) 버튼의 스타일을 지정*/
+.land-name button[aria-selected="true"] {
+    color: #222222;
+    font-weight: bold;
+}
+
  .land-tap-list {
+    width: 420px;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(8, 1fr); /* 4열 */
-    grid-template-rows: repeat(1, minmax(0, 1fr)); /* 2행 */
+    grid-template-columns: repeat(8, 1fr); /* 8열 */
+    grid-template-rows: repeat(1, minmax(0, 1fr)); /* 1행 */
     grid-column-gap: 10px;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
+    border-bottom: 1px solid #dddddd;
  }
+
+ .local-place-name{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr); /* 4열 */
+    grid-template-rows: repeat(3, minmax(0, 1fr)); /* 3행 */
+    grid-column-gap: 10px; /* 열 간의 간격 설정 */
+    grid-row-gap: 15px;
+    margin-bottom: 30px;
+ }
+
+.local-place-name button{
+    width: 100%; /* 버튼의 가로 크기를 부모의 1fr에 맞춤 */
+    height: 34.4px; /* 버튼의 세로 크기를 부모의 1fr에 맞춤 */
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+}
 
  .calendar-view-space {
     position: absolute;
-    top: calc(100% + 5px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
+    top: calc(100% + 10px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
     left: 0;
     width: 800px;
     height: 540px;
@@ -403,7 +447,13 @@ button {
     white-space: nowrap;
   }
 
-  .date-select,
+  .date-select {
+    background-color: #FFFFFF;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    padding: 10px;
+  }
+
   .month-part,
   .flexible-schedule {
     background-color: #E6E6E6;
@@ -411,18 +461,161 @@ button {
     padding: 10px;
   }
 
-  .selection-area {
+  .tab_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tab1 {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      display: block;
+  }
+
+  .tab2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+  }
+
+  .tab3 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: none;
+    }
+
+  .add-date-button-area{
+    width: 100%;
+    display: block;
   }
 
   .calendar-area {
     margin-top: 20px;
-
+    align-items: center;
   }
 
+.button-control{
+    margin-left: 30px;
+}
+.current-date,
+.plus-one,
+.plus-two,
+.plus-three,
+.plus-week {
+  border: 1px solid #dddddd;
+  border-radius: 50px / 50px;
+  padding: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+.duration-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.when-is-travel {
+    font-size: 18px;
+    font-family: 'Circular';
+    font-weight: bold;
+}
+
+.duration-image {
+    margin-top: 20px;
+}
+
+.schedule-setting-space {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select-how-long {
+    font-size: 18px;
+    font-family: 'Circular';
+    margin-top: 45px;
+}
+
+.duration-button-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.durationBtn {
+    align-items: center;
+    padding: 30px;
+
+}
+
+.weekend,
+.one-week,
+.one-month {
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    padding: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.select-when-travel {
+    font-size: 18px;
+    font-family: 'Circular';
+    margin-top: 25px;
+}
+
+.month-collection {
+    width: 766px;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr); /* 12열 */
+    grid-template-rows: repeat(1, minmax(0, 1fr)); /* 1행 */
+    grid-column-gap: 10px; /* 열 간의 간격 설정 */
+
+
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.month1, .month2, .month3, .month4, .month5, .month6,
+.month7, .month8, .month9, .month10, .month11, .month12 {
+    border: 1px solid #dddddd;
+    border-radius: 10px / 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guest-control-space {
+    position: absolute;
+    top: calc(100% + 10px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
+    right: 0;
+    width: 360px;
+    height: 360px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    display: none;
+    padding: 16px;
+ }
 
 /* Adjustments for responsiveness as needed */
 @media (max-width: 768px) {

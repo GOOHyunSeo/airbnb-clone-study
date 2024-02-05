@@ -171,18 +171,18 @@ document.addEventListener("click", function(event){
     }
 });
 
-/*
+
 //게스트 선택란 클릭시 이벤트
-document.addEventListener("click", function(event){
+document.addEventListener("click", function(event) {
     var guestControlSpace = document.querySelector(".guest-control-space");
 
-    if(event.target.closest(".guest-select-circle") {
+    if(event.target.closest(".guest-select-circle")) {
         guestControlSpace.style.display = "block";
-    } else if(!event.target.closest(".guest-control-space") && !event.target.closest(".guest-select-circle"){
+    } else if(!event.target.closest(".guest-control-space") && !event.target.closest(".guest-select-circle")){
         guestControlSpace.style.display = "none";
     }
 });
-*/
+
 
 //체크인, 아웃 날짜선택 탭 클릭
 document.addEventListener('DOMContentLoaded', function() {
@@ -321,6 +321,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   var buttons = document.querySelectorAll('.land-tap-list button');
+  var allWorldBtn = document.querySelector('.all-world-btn');
+
+  allWorldBtn.style.color = "#222222";
+  allWorldBtn.fontWeight = "bold";
+  allWorldBtn.style.borderBottom = '2px solid #000000';
 
   buttons.forEach(function(button) {
     button.addEventListener('click', function() {

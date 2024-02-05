@@ -132,7 +132,7 @@
                             aria-pressed="false"
                             type="button"
                           ><img class="world" src="../images/image-world.jpg" style="width: 94.6px; height: 94.6px;"></button>
-                          <div aria-hidden="true">유연한 검색</div>
+                          <div aria-hidden="true" style="font-size:14px; color: #222222;">유연한 검색</div>
                         </div>
                         <div class="europe-search-area">
                           <button
@@ -140,7 +140,7 @@
                             aria-pressed="false"
                             type="button"
                           ><img class="europe" src="../images/image-europe.jpg" style="width: 94.6px; height: 94.6px;"></button>
-                          <div aria-hidden="true">유럽</div>
+                          <div aria-hidden="true" style="font-size:14px; color: #222222;">유럽</div>
                         </div>
                         <div class="japan-search-area">
                           <button
@@ -148,7 +148,7 @@
                             aria-pressed="false"
                             type="button"
                           ><img class="japan" src="../images/image-japan.jpg" style="width: 94.6px; height: 94.6px;"></button>
-                          <div aria-hidden="true">일본</div>
+                          <div aria-hidden="true" style="font-size:14px; color: #222222;">일본</div>
                         </div>
                         <div class="eastaisa-search-area">
                           <button
@@ -156,7 +156,7 @@
                             aria-pressed="false"
                             type="button"
                           ><img class="eastasia" src="../images/image-eastaisa.jpg" style="width: 94.6px; height: 94.6px;"></button>
-                          <div aria-hidden="true">동남아시아</div>
+                          <div aria-hidden="true" style="font-size:14px; color: #222222;">동남아시아</div>
                         </div>
                       </div>
                     </div>
@@ -568,10 +568,66 @@
             <div class="guest-control-space">
                 <section>
                     <div class="guest-setting">
-                        <div class="adult-area"></div>
-                        <div class="child-area"></div>
-                        <div class="baby-area"></div>
-                        <div class="pet-area"></div>
+                        <div class="adult-area">
+                            <div class="adult-detail">
+                                <div style="font-size: 16px; font-family: Circular; font-weight: bold; color: #222222;">성인</div>
+                                <div style="font-size: 14px; font-family: Circular; color: #717171; margin-top: 5px;">13세 이상</div>
+                            </div>
+                            <div class="control-bar">
+                                <button class="minus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">-</span>
+                                </button>
+                                <div class="adult-count" style="color: #222222">0</div>
+                                <button class="plus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="child-area">
+                            <div class="child-detail">
+                                <div style="font-size: 16px; font-family: Circular; font-weight: bold; color: #222222;">어린이</div>
+                                <div style="font-size: 14px; font-family: Circular; color: #717171; margin-top: 5px;">2~12세</div>
+                            </div>
+                            <div class="control-bar">
+                                <button class="minus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">-</span>
+                                </button>
+                                <div class="child-count" style="color: #222222">0</div>
+                                <button class="plus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="baby-area">
+                            <div class="baby-detail">
+                                <div style="font-size: 16px; font-family: Circular; font-weight: bold; color: #222222;">유아</div>
+                                <div style="font-size: 14px; font-family: Circular; color: #717171; margin-top: 5px;">2세 미만</div>
+                            </div>
+                            <div class="control-bar">
+                                <button class="minus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">-</span>
+                                </button>
+                                <div class="baby-count" style="color: #222222">0</div>
+                                <button class="plus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pet-area">
+                            <div class="pet-detail">
+                                <div style="font-size: 16px; font-family: Circular; font-weight: bold; color: #222222;">반려동물</div>
+                                <div style="font-size: 14px; font-family: Circular; color: #717171; font-weight: bold; margin-top: 5px; text-decoration: underline;">보조동물을 동반하시나요?</div>
+                            </div>
+                            <div class="control-bar">
+                                <button class="minus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">-</span>
+                                </button>
+                                <div class="pet-count" style="color: #222222">0</div>
+                                <button class="plus-btn" style="width: 32px; height: 32px; border: 1px solid #dddddd; border-radius: 50px;">
+                                    <span style="font-size: 20px;">+</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -17,3 +17,6 @@
 /* 김재협 */
 @import "./reset.css";
 @import "./common.css";
+
+/* 상세페이지 */
+@import "./detail.css";

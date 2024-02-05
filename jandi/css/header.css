@@ -49,7 +49,7 @@ header {
   align-items: center;
   border-bottom: 1px solid var(--borderColor);
 }
-.header-experience {
+.experience__header {
   padding: 0px 50px;
 }
 .header-width {

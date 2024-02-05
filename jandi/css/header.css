@@ -7,9 +7,41 @@
   height: 150vh;
 } */
 
+.home__top-banner {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+.home__top-banner-text {
+  color: black;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+.home__top-banner-text:hover {
+  cursor: pointer;
+}
+
 /* header */
 header {
   height: 100px;
+}
+.home__header {
+  padding: 20px 80px 40px 80px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.home__header-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .header {
   padding: 0px 80px;
@@ -22,6 +54,21 @@ header {
 }
 .header-width {
   width: 33.3%;
+}
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header-link-now {
+  color: black;
+  font-weight: 600;
+}
+.header-link-ex,
+.header-link-online {
+  padding: 15px;
+  border-radius: 20px;
 }
 
 .logo__icon:hover {
@@ -79,6 +126,8 @@ header {
   margin-right: 10px;
 }
 
+.header-link-ex:hover,
+.header-link-online:hover,
 .settings__host:hover,
 .settings__globe:hover {
   background-color: #f7f7f7;

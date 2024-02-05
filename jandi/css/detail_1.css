@@ -42,11 +42,11 @@
   flex-wrap: wrap;
 }
 
-.big_thumnail {
+/*.big_thumnail {
   background-size: cover;
   background-position: center;
   cursor: pointer;
-}
+}*/
 
 /*.hover11 figure img {
     opacity: 1;
@@ -69,6 +69,14 @@
   background-position: center;
   border-radius: 15px;
   display: flex;
+  cursor: pointer;
+  opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.big_thumnail:hover {
+  opacity: .7;
 }
 
 .small_thumnail1 {
@@ -85,6 +93,13 @@
   border-radius: 15px;
   display: inline-block;
   cursor: pointer;
+  opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.img_small1:hover {
+  opacity: .7;
 }
 
 .img_small2 {
@@ -97,6 +112,13 @@
   border-radius: 15px;
   display: inline-block;
   cursor: pointer;
+  opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.img_small2:hover {
+  opacity: .7;
 }
 
 .small_thumnail2 {
@@ -117,6 +139,13 @@
   border-radius: 15px;
   display: inline-block;
   cursor: pointer;
+  opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.img_small3:hover {
+  opacity: .7;
 }
 
 .img_small4 {
@@ -129,6 +158,13 @@
   border-radius: 15px;
   display: inline-block;
   cursor: pointer;
+  opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.img_small4:hover {
+  opacity: .7;
 }
 
 /*.big_image {
@@ -1077,6 +1113,10 @@
   border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.box10_button:hover {
+  background-color: #E5E5E5; /* 마우스를 올렸을 때의 배경색 (원하는 색상으로 변경 가능) */
 }
 
 .button_textbox {

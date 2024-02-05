@@ -3,8 +3,8 @@
   --borderColor: #dddddd;
 }
 
-body {
-  padding-top: 183px;
+.home__body {
+  padding-top: 335px;
   margin: 0 auto;
   max-width: 2360px;
 }
@@ -15,7 +15,6 @@ body {
   top: 0;
   z-index: 100;
   background-color: white;
-  padding: 0px 40px;
 }
 /* header */
 /* header {
@@ -142,7 +141,7 @@ main {
 }
 .room__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
   grid-gap: 30px;
 }
 

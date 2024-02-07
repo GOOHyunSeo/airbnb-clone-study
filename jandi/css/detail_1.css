@@ -327,16 +327,108 @@
     margin: 10px 20px 10px 20px;
     border: 1px solid darkgrey;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box2_1 {
     display: inline-block;
+    height: 60px;
+    width: 149px;
+    cursor: pointer;
+    border-right: 1px solid darkgray;
+}
+
+.box2_1:hover {
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+.reservation_date {
+    position: absolute;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    width: 625px;
+    height: 480px;
+    right: 1;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 20px / 20px;
+    display: none;
+    padding: 15px;
+    z-index: 2;
+}
+
+.reservation_text1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.reservation_text2 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.reservation_calendar_img {
+    margin: 20px 10px;
+}
+
+.reservation_bottom {
+    width: 600px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.reservation_keyboard_img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reservation_text3 {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 370px;
+    vertical-align: 10px;
+    font-size: 15px;
+}
+
+.reservation_close {
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 10px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    cursor: pointer;
+    vertical-align: 14px;
+}
+
+.reservation_close:hover {
+    border: 1.5px solid gray;
+    border-radius: 10px;
+}
+
+.reservation_close > a {
+    margin-left: 11px;
+    vertical-align: -3px;
+    font-size: 14px;
+    color: white;
+    align-items: center;
 }
 
 .inbox1_text1 {
-    display: inline-block;
-    border-right: 1px solid darkgray;
-    height: 60px;
-    width: 149px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    cursor: pointer;
 }
 
 .inbox1_text1 > a {
@@ -353,7 +445,20 @@
     color: gray;
 }
 
+.box2_2 {
+    display: inline-block;
+    height: 60px;
+    width: 149px;
+    cursor: pointer;
+}
+
+.box2_2:hover {
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
 .inbox1_text2 {
+    margin-top: 10px;
     display: inline-block;
     height: 50px;
     cursor: pointer;
@@ -372,11 +477,186 @@
     color: gray;
 }
 
+.box2_3 {
+    display: inline-block;
+    height: 60px;
+    width: 300px;
+    cursor: pointer;
+    border-top: 1px solid darkgray;
+}
+
+.guest_calculator {
+    position: absolute;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 400px;
+    right: 1;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 20px / 20px;
+    display: none;
+    padding: 15px;
+    z-index: 2;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.adult {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.adult_textbox {
+    display: block;
+}
+
+.adult_text1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.adult_text2 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.minus_btn {
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.number {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.plus_btn {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.child {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.child_textbox {
+    width: 55.09px;
+    display: block;
+}
+
+.child_text1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.child_text2 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.infant {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.infant_textbox {
+    width: 55.09px;
+    display: block;
+}
+
+.infant_text1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.infant_text2 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.pet {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.pet_textbox {
+    width: 120px;
+}
+
+.pet_text1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pet_text2 {
+    font-size: 12px;
+    width: 130px;
+    color: gray;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pet_minus_btn {
+    margin-left: 54px;
+    cursor: pointer;
+}
+
+.pet_number {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.pet_plus_btn {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.box2_3:hover {
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 11px;
+    color: gray;
+}
+
+.guest_close {
+    margin-top: 20px;
+    width: 272.31px;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.guest_close_button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .inbox2_text {
     display: inline-block;
     width: 250px;
     height: 59px;
-    border-top: 1px solid darkgray;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     cursor: pointer;
 }
@@ -396,15 +676,14 @@
 
 .inbox2_downarrow {
     width: 50px;
-    height: 59px;
+    height: 50px;
     display: inline-block;
-    border-top: 1px solid darkgray;
     position: absolute;
     cursor: pointer;
 }
 
 .inbox2_downarrow > img {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 20px;
 }
 
@@ -419,6 +698,11 @@
     cursor: pointer;
 }
 
+.reservation_button:hover {
+    border: 1.5px solid gray;
+    border-radius: 10px;
+}
+
 .reservation_button > a {
     margin-top: 16px;
     margin-left: 120px;
@@ -427,7 +711,7 @@
 
 .caution_text {
     display: flex;
-    margin-top: 25px;
+    margin-top: 75px;
     justify-content: center;
     font-size: 13px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
@@ -498,6 +782,7 @@
     position: absolute;
     display: flex;
     margin-right: 450px;
+    z-index: 1;
 }
 
 .profile_img {
@@ -539,6 +824,7 @@
     border-bottom: 1px solid darkgray;
     position: absolute;
     display: block;
+    z-index: 1;
 }
 
 .box4_1 {
@@ -637,6 +923,7 @@
     background-color: #d9d9d9;
     border-radius: 10px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    z-index: 1;
 }
 
 .box5_text {
@@ -665,6 +952,7 @@
     /*justify-content: center;*/
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     display: flex;
+    z-index: 1;
 }
 
 .box6_image {

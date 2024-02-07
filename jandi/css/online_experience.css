@@ -2,6 +2,7 @@
   margin: 8px -8px 8px 50px;
 }
 .title-experience {
+  max-width: 1700px;
   display: flex;
   align-items: center;
   margin-top: 30px;
@@ -239,7 +240,7 @@
 }
 .host_box {
   display: flex;
-  max-width: none;
+  max-width: 1600px;
   flex-wrap: nowrap;
   padding: 0 70px 0 50px;
   transition: transform 0.5s ease;
@@ -729,7 +730,7 @@
 .weekend_host_box {
   flex-wrap: nowrap;
   overflow-x: auto;
-  max-width: 100%;
+  max-width: 1600px;
   padding: 0 70px 0 50px;
   transition: transform 0.5s ease-in-out;
   display: flex;

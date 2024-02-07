@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showReservationDate() {
+    //reservation_date 창 열기
     var box2Inboxes = document.querySelector(".boxes_scrollmoving");
     box2Inboxes.classList.add("active");
 }
@@ -33,6 +34,7 @@ document.addEventListener("click", function (event) {
 });
 
 function closeReservationDate() {
+    //reservation_date 창 닫기
     var box2Inboxes = document.querySelector(".boxes_scrollmoving");
     box2Inboxes.classList.add("active");
 }
@@ -47,6 +49,7 @@ document.addEventListener("click", function (event) {
 });
 
 function showGuestCalcualator() {
+    //guest_calculator 창 열기
     var box2Inboxes = document.querySelector(".boxes_scrollmoving");
     box2Inboxes.classList.add("active");
 }
@@ -62,6 +65,7 @@ document.addEventListener("click", function (event) {
 });
 
 function closeGuestCalcualator() {
+    //guest_calculator 창 닫기
     var box2Inboxes = document.querySelector(".boxes_scrollmoving");
     box2Inboxes.classList.add("active");
 }

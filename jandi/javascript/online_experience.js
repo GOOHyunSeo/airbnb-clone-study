@@ -17,8 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const newPosition = -index * slideWidth;
     imageSlider.style.transition = 'transform 0.5s ease';
     imageSlider.style.transform = `translateX(${newPosition}px)`;
+    if (index === totalImageSlides - 2) {
+      document.querySelector('.rhigh-button').disabled = true;
+    } else {
+      document.querySelector('.rhigh-button').disabled = false;
+    }
+    if (index === 0) {
+      document.querySelector('.lhigh-button').disabled = true;
+    } else {
+      document.querySelector('.lhigh-button').disabled = false;
+    }
   }
-
+  
   function nextImageSlide() {
     imageCurrentSlide = (imageCurrentSlide + 1) % totalImageSlides;
     showImageSlide(imageCurrentSlide);

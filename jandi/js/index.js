@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // full-searchbar-space 요소
     let fullSearchbarSpace = document.querySelector(".full-searchbar-space");
 
+    //invisible-screen 요소
+    let invisibleScreen = document.querySelector(".invisible-screen");
+    let calendarViewSpace = document.querySelector(".calendar-view-space");
+
     // 초기 상태를 저장
     let originalBackgroundColor = fullSearchbarSpace.style.backgroundColor;
 
@@ -54,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function() {
         guestSelectCircle.style.backgroundColor = originalGuestSelectBackgroundColor;
         guestSelectCircle.style.boxShadow = originalGuestSelectBoxShadow;
         guestSelectCircle.style.border = originalGuestSelectBorder;
+
+        if (window.getComputedStyle(invisibleScreen).display === 'block'){
+            invisibleScreen.style.backgroundColor = "#E6E6E6";
+            invisibleScreen.style.border = "none";
+            invisibleScreen.style.boxShadow = "none";
+        }
     });
 
     // check-in-square을 클릭했을 때 이벤트 처리
@@ -117,15 +127,43 @@ document.addEventListener("DOMContentLoaded", function() {
         checkOutSquare.style.backgroundColor = originalCheckOutBackgroundColor;
         checkOutSquare.style.boxShadow = originalCheckOutBoxShadow;
         checkOutSquare.style.border = originalCheckOutBorder;
+
+        if (window.getComputedStyle(invisibleScreen).display === 'block'){
+            invisibleScreen.style.backgroundColor = "#E6E6E6";
+            invisibleScreen.style.border = "none";
+            invisibleScreen.style.boxShadow = "none";
+        }
+    });
+
+    invisibleScreen.addEventListener("click", function(){
+        fullSearchbarSpace.style.backgroundColor = "#E6E6E6";
+        invisibleScreen.style.backgroundColor = "#ffffff";
+        invisibleScreen.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+        invisibleScreen.style.border = "1px solid #e0e0e0";
+
+        //나머지 검색창 영역을 초기상태로 복구
+        travelSpotCircle.style.backgroundColor = originalCircleBackgroundColor;
+        travelSpotCircle.style.boxShadow = originalCircleBoxShadow;
+        travelSpotCircle.style.border = originalCircleBorder;
+        checkInSquare.style.backgroundColor = originalCheckInBackgroundColor;
+        checkInSquare.style.boxShadow = originalCheckInBoxShadow;
+        checkInSquare.style.border = originalCheckInBorder;
+        checkOutSquare.style.backgroundColor = originalCheckOutBackgroundColor;
+        checkOutSquare.style.boxShadow = originalCheckOutBoxShadow;
+        checkOutSquare.style.border = originalCheckOutBorder;
+        guestSelectCircle.style.backgroundColor = originalGuestSelectBackgroundColor;
+        guestSelectCircle.style.boxShadow = originalGuestSelectBoxShadow;
+        guestSelectCircle.style.border = originalGuestSelectBorder;
+
     });
 
     // document에 클릭 이벤트 리스너를 추가합니다.
     document.addEventListener("click", function(event) {
-        // 클릭된 요소가 travel-spot-circle이나 check-in-square이 아니라면 원래의 상태로 복원합니다.
+        // 클릭된 요소가 검색창 요소가 아니라면 원래의 상태로 복원
         if (!event.target.closest(".travel-spot-circle") && !event.target.closest(".check-in-square")
         && !event.target.closest(".check-out-square") && !event.target.closest(".guest-select-circle")
         && !event.target.closest(".local-search-area") && !event.target.closest(".calendar-view-space")
-        && !event.target.closest(".guest-control-space")){
+        && !event.target.closest(".guest-control-space") && !event.target.closest(".invisible-screen")){
             fullSearchbarSpace.style.backgroundColor = originalBackgroundColor;
             travelSpotCircle.style.backgroundColor = originalCircleBackgroundColor;
             travelSpotCircle.style.boxShadow = originalCircleBoxShadow;
@@ -139,6 +177,9 @@ document.addEventListener("DOMContentLoaded", function() {
             guestSelectCircle.style.backgroundColor = originalGuestSelectBackgroundColor;
             guestSelectCircle.style.boxShadow = originalGuestSelectBoxShadow;
             guestSelectCircle.style.border = originalGuestSelectBorder;
+            invisibleScreen.style.backgroundColor = "#FFFFFF";
+            invisibleScreen.style.border = "none";
+            invisibleScreen.style.boxShadow = "none";
         }
     });
 });
@@ -162,14 +203,26 @@ document.addEventListener("click", function (event) {
 //체크인, 체크아웃 클릭시 이벤트
 document.addEventListener("click", function(event){
     var calendarViewSpace = document.querySelector(".calendar-view-space");
+    var invisibleScreen = document.querySelector(".invisible-screen");
 
-    if(event.target.closest(".check-in-square") || event.target.closest(".check-out-square")){
-        calendarViewSpace.style.display = "block";
-    } else if(!event.target.closest(".check-in-square") && !event.target.closest(".calendar-view-space")
-    && !event.target.closest(".check-out-square")) {
-        calendarViewSpace.style.display = "none";
+    //invisible-screen 활성화시
+    if(window.getComputedStyle(invisibleScreen).display === 'block'){
+        if(event.target.closest(".invisible-screen")){
+                calendarViewSpace.style.display = "block";
+            } else if(!event.target.closest(".invisible-screen") && !event.target.closest(".calendar-view-space")) {
+                calendarViewSpace.style.display = "none";
+            }
+    } else {
+        if(event.target.closest(".check-in-square") || event.target.closest(".check-out-square")){
+                calendarViewSpace.style.display = "block";
+            } else if(!event.target.closest(".check-in-square") && !event.target.closest(".calendar-view-space")
+            && !event.target.closest(".check-out-square")) {
+                calendarViewSpace.style.display = "none";
+            }
     }
+
 });
+
 
 
 //게스트 선택란 클릭시 이벤트
@@ -196,6 +249,12 @@ document.addEventListener('DOMContentLoaded', function() {
             var tabTitle = document.querySelector(".tab-title");
             var originalBackgroundColor = tabTitle.style.backgroundColor;
 
+            var invisibleScreen = document.querySelector('.invisible-screen');
+            var oneWeekBtn = document.querySelector('.one-week');
+            var weekendBtn = document.querySelector('.weekend');
+            var oneMonthBtn = document.querySelector('.one-month');
+            var invisibleDuration = document.querySelector('.invisible-duration');
+
             dateSelectButton.addEventListener('click', function() {
                 dateSelectButton.style.backgroundColor = "#FFFFFF";
                 dateSelectButton.style.border = "1px solid #dddddd";
@@ -203,6 +262,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 monthPartButton.style.border = "none";
                 flexibleScheduleButton.style.backgroundColor = "#E6E6E6";
                 flexibleScheduleButton.style.border = "none";
+
+                invisibleScreen.style.display = "none";
             });
 
             monthPartButton.addEventListener('click', function() {
@@ -212,6 +273,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 dateSelectButton.style.border = "none";
                 flexibleScheduleButton.style.backgroundColor = "#E6E6E6";
                 flexibleScheduleButton.style.border = "none";
+
+                invisibleScreen.style.display = "block";
+
             });
 
             flexibleScheduleButton.addEventListener('click', function() {
@@ -221,6 +285,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 monthPartButton.style.border = "none";
                 dateSelectButton.style.backgroundColor = "#E6E6E6";
                 dateSelectButton.style.border = "none";
+
+                invisibleScreen.style.display = "block";
+                oneWeekBtn.style.border = '2px solid #000000';
+                oneMonthBtn.style.border = "1px solid #dddddd";
+                weekendBtn.style.border = "1px solid #dddddd";
+                invisibleDuration.textContent = "언제든 일주일";
             });
 });
 
@@ -342,4 +412,161 @@ document.addEventListener("DOMContentLoaded", function() {
       button.style.borderBottom = '2px solid #000000'; // border-bottom 스타일 변경
     });
   });
+});
+
+
+// 유연한 일정, 기간 버튼 클릭 이벤트
+document.addEventListener("DOMContentLoaded", function() {
+    var weekendBtn = document.querySelector('.weekend');
+    var oneWeekBtn = document.querySelector('.one-week');
+    var oneMonthBtn = document.querySelector('.one-month');
+
+    var invisibleDuration = document.querySelector('.invisible-duration');
+
+    weekendBtn.addEventListener('click', function(e) {
+        weekendBtn.style.border = '2px solid #000000';
+        invisibleDuration.textContent = "언제든 주말"
+        oneWeekBtn.style.border = '1px solid #dddddd';
+        oneMonthBtn.style.border = '1px solid #dddddd';
+    });
+
+    oneWeekBtn.addEventListener('click', function(e) {
+        oneWeekBtn.style.border = '2px solid #000000';
+        invisibleDuration.textContent = "언제든 일주일"
+        weekendBtn.style.border = '1px solid #dddddd';
+        oneMonthBtn.style.border = '1px solid #dddddd';
+    });
+
+    oneMonthBtn.addEventListener('click', function(e) {
+        oneMonthBtn.style.border = '2px solid #000000';
+        invisibleDuration.textContent = "언제든 한 달"
+        weekendBtn.style.border = '1px solid #dddddd';
+        oneWeekBtn.style.border = '1px solid #dddddd';
+    });
+});
+
+//플러스 마이너스 버튼
+document.addEventListener("DOMContentLoaded", function() {
+    // Adult 영역
+    var adultPlusButtons = document.querySelectorAll(".adult-area .plus-btn");
+    var adultMinusButtons = document.querySelectorAll(".adult-area .minus-btn");
+    var adultCountElement = document.querySelector(".adult-area .adult-count");
+    var adultCount = 0;
+
+    function updateAdultCount() {
+        adultCountElement.innerText = adultCount;
+    }
+
+    function incrementAdult() {
+        adultCount++;
+        updateAdultCount();
+    }
+
+    function decrementAdult() {
+        if (adultCount > 0) {
+            adultCount--;
+            updateAdultCount();
+        }
+    }
+
+    adultPlusButtons.forEach(function(button) {
+        button.addEventListener("click", incrementAdult);
+    });
+
+    adultMinusButtons.forEach(function(button) {
+        button.addEventListener("click", decrementAdult);
+    });
+
+
+    // Child 영역
+    var childPlusButtons = document.querySelectorAll(".child-area .plus-btn");
+    var childMinusButtons = document.querySelectorAll(".child-area .minus-btn");
+    var childCountElement = document.querySelector(".child-area .child-count");
+    var childCount = 0;
+
+    function updateChildCount() {
+        childCountElement.innerText = childCount;
+    }
+
+    function incrementChild() {
+        childCount++;
+        updateChildCount();
+    }
+
+    function decrementChild() {
+        if (childCount > 0) {
+            childCount--;
+            updateChildCount();
+        }
+    }
+
+    childPlusButtons.forEach(function(button) {
+        button.addEventListener("click", incrementChild);
+    });
+
+    childMinusButtons.forEach(function(button) {
+        button.addEventListener("click", decrementChild);
+    });
+
+
+    // Baby 영역
+    var babyPlusButtons = document.querySelectorAll(".baby-area .plus-btn");
+    var babyMinusButtons = document.querySelectorAll(".baby-area .minus-btn");
+    var babyCountElement = document.querySelector(".baby-area .baby-count");
+    var babyCount = 0;
+
+    function updateBabyCount() {
+        babyCountElement.innerText = babyCount;
+    }
+
+    function incrementBaby() {
+        babyCount++;
+        updateBabyCount();
+    }
+
+    function decrementBaby() {
+        if (babyCount > 0) {
+            babyCount--;
+            updateBabyCount();
+        }
+    }
+
+    babyPlusButtons.forEach(function(button) {
+        button.addEventListener("click", incrementBaby);
+    });
+
+    babyMinusButtons.forEach(function(button) {
+        button.addEventListener("click", decrementBaby);
+    });
+
+
+    // Pet 영역
+    var petPlusButtons = document.querySelectorAll(".pet-area .plus-btn");
+    var petMinusButtons = document.querySelectorAll(".pet-area .minus-btn");
+    var petCountElement = document.querySelector(".pet-area .pet-count");
+    var petCount = 0;
+
+    function updatePetCount() {
+        petCountElement.innerText = petCount;
+    }
+
+    function incrementPet() {
+        petCount++;
+        updatePetCount();
+    }
+
+    function decrementPet() {
+        if (petCount > 0) {
+            petCount--;
+            updatePetCount();
+        }
+    }
+
+    petPlusButtons.forEach(function(button) {
+        button.addEventListener("click", incrementPet);
+    });
+
+    petMinusButtons.forEach(function(button) {
+        button.addEventListener("click", decrementPet);
+    });
 });

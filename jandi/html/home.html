@@ -121,7 +121,266 @@
                 </div>
               </label>
             </div>
+<<<<<<< Updated upstream
             <div class="local-search-area">
+=======
+
+            <!-- 검색창 구분선 -->
+            <div class="partition"></div>
+
+            <!-- 체크인, 체크아웃 부분 -->
+            <div class="check-inorout">
+              <div class="full-check-inorout-space">
+                <div class="position-detail">
+                  <div class="invisible-screen">
+                    <div class="invisible-text">날짜</div>
+                    <div class="invisible-duration">3월4일부터 3월6일까지</div>
+                  </div>
+                  <div class="check-in-area">
+                    <div
+                            class="check-in-square"
+                            role="button"
+                            tabindex="0"
+                            area-expanded="false"
+                            data-testid="structured-search-input-field-split-dates-0"
+                    >
+                      <div class="check-in-and-date">
+                        <div class="check-in-naming" style="font-weight: bold">
+                          체크인
+                        </div>
+                        <div class="in-date-add">
+                          날짜 추가
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 검색창 구분선 -->
+                  <div class="partition"></div>
+
+                  <div class="check-out-area">
+                    <div
+                            class="check-out-square"
+                            role="button"
+                            tabindex="0"
+                            area-expanded="false"
+                            data-testid="structured-search-input-field-split-dates-1"
+                    >
+                      <div class="check-out-and-date">
+                        <div class="check-out-naming" style="font-weight: bold">
+                          체크아웃
+                        </div>
+                        <div class="out-date-add">
+                          날짜 추가
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar-view-space">
+                  <section>
+                    <div class="schedule-select-area">
+                      <div class="detail-partition">
+                        <div id="tabs">
+                          <div class="tab-select-area">
+                            <div class="tab-title">
+                              <div class="select-title-tab" role="tablist">
+                                <button
+                                        type="button"
+                                        aria-selected="true"
+                                        class="date-select"
+                                        role="tab"
+                                        style="font-weight: bold">
+                                  날짜 지정
+                                </button>
+
+                                <button
+                                        type="button"
+                                        aria-selected="true"
+                                        class="month-part"
+                                        role="tab"
+                                        style="font-weight: bold"
+                                >
+                                  월 단위
+                                </button>
+                                <button
+                                        type="button"
+                                        aria-selected="true"
+                                        class="flexible-schedule"
+                                        role="tab"
+                                        style="font-weight: bold"
+                                >
+                                  유연한 일정
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab_contents">
+                          <div class="tab1">
+                            <img class="calendar-area" src="../images/select_calendar.jpg" style="width: 720px; height: 380px;">
+
+                            <div class="add-date-button-area">
+                              <div class="button-control">
+                                <button  type="button" aria-selected="true" class="current-date" style="font-size:12px; color: #222222;">정확한 날짜</button>
+                                <button  type="button" aria-selected="true" class="plus-one" style="font-size:12px; color: #222222;">± 1일</button>
+                                <button  type="button" aria-selected="true" class="plus-two" style="font-size:12px; color: #222222;">± 2일</button>
+                                <button  type="button" aria-selected="true" class="plus-three" style="font-size:12px; color: #222222;">± 3일</button>
+                                <button  type="button" aria-selected="true" class="plus-week" style="font-size:12px; color: #222222;">± 7일</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab2">
+                            <div class="travel-duration-space">
+                              <div id="tab2">
+                                <div class="duration-section">
+                                  <div class="when-is-travel" style="font-weight: bold">여행 날짜는 언제인가요?</div>
+                                  <div class="duration-image">
+                                    <img class="duration-setting" src="../images/travel-duration.PNG" style="width: 400px; height: 360px;">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab3">
+                            <div class="schedule-setting-space">
+                              <div class="select-how-long" style="font-weight: bold">숙박 기간을 선택하세요.</div>
+                              <div class="duration-button-area">
+                                <div class="durationBtn">
+                                  <button  type="button" aria-selected="true" class="weekend" style="font-size:14px; color: #222222;">주말</button>
+                                  <button  type="button" aria-selected="true" class="one-week" style="font-size:14px; color: #222222;">일주일</button>
+                                  <button  type="button" aria-selected="true" class="one-month" style="font-size:14px; color: #222222;">한 달</button>
+                                </div>
+                              </div>
+                              <div class="select-when-travel" style="font-weight: bold">여행 날짜를 선택하세요.</div>
+                              <div class="month-collection">
+                                <button class="month1" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month1-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">1월</div>
+                                </button>
+                                <button class="month2" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month2-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">2월</div>
+                                </button>
+                                <button class="month3" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month3-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">3월</div>
+                                </button>
+                                <button class="month4" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month4-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">4월</div>
+                                </button>
+                                <button class="month5" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month5-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">5월</div>
+                                </button>
+                                <button class="month6" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month6-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">6월</div>
+                                </button>
+                                <button class="month7" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month7-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">7월</div>
+                                </button>
+                                <button class="month8" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month8-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">8월</div>
+                                </button>
+                                <button class="month9" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month9-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">9월</div>
+                                </button>
+                                <button class="month10" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month10-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">10월</div>
+                                </button>
+                                <button class="month11" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month11-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">11월</div>
+                                </button>
+                                <button class="month12" style="width: 120px; height: 134px;">
+                                  <div class="calendar-choose-image">
+                                    <img class="month12-icon" src="../images/calendar-icon.jpg" style="width: 32px; height: 32px;">
+                                  </div>
+                                  <div style="font-size: 14px; font-family: Circular; font-weight: bold">12월</div>
+                                </button>
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+
+            <!-- 검색창 구분선 -->
+            <div class="partition"></div>
+
+            <!-- 여행자 선택 부분 -->
+            <div class="guest-select">
+              <div class="guest-select-circle">
+                <div class="guest-select-and-search">
+                  <div class="guest-select-area">
+                    <div class="guest-select-and-add">
+                      <div class="guest-naming" style="font-weight: bold">
+                        여행자
+                      </div>
+                      <div class="guest-add">
+                        게스트 추가
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-button-area">
+                  <button
+                          class="search-guest-button"
+                          type="button"
+                          data-testid="structured-search-input-search-button"
+                  >
+                    <div class="search-click">
+                      <div class="search-click-image">
+                        <img
+                                id="magnifying-glass"
+                                src="../images/magnifying-glass.png"
+                                width="20px"
+                                height="20px"
+                        />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="guest-control-space">
+>>>>>>> Stashed changes
               <section>
                 <div class="local-search-background">
                   <div class="search-menu">

@@ -2,6 +2,7 @@
   margin: 8px -8px 8px 50px;
 }
 .title-experience {
+  max-width: 1700px;
   display: flex;
   align-items: center;
   margin-top: 30px;
@@ -14,37 +15,61 @@
   pointer-events: none;
   opacity: 0.2;
 }
+.lhigh-button,
+.rhigh-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.lhigh-button {
+  margin-left: 2px;
+}
+.rhigh-button {
+  margin-left: 5px;
+}
 .highlighted-text {
   font-size: 32px;
   font-weight: bold;
   margin-left: 50px;
   color: black;
 }
+
 .online-container {
   display: flex;
   box-sizing: border-box;
   flex-direction: column; /* 사진을 세로로 정렬 */
   align-items: flex-start; /* 가로 정렬 기준을 시작 부분에 맞춤 */
   margin-top: 10px;
-  overflow-x: auto; /* 가로 스크롤을 허용하여 모든 사진을 볼 수 있도록 함 */
+  overflow-x: hidden;
 }
 .containerBox {
   display: flex;
   justify-content: space-between;
-  max-width: 1600px;
+  max-width: 2500px;
   margin-bottom: 15px;
   margin-left: 50px;
-  overflow: hidden;
-}
+  width: 2360px;
+  height: 332px;
+  position: relative;
+  overflow: hidden;  
+} 
 .containerphoto {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   margin: 0 5px;
 }
+#imageSlider {
+  transition: transform 0.4s ease-in-out;
+}
 .containerphoto img {
-  width: 590px;
-  height: 332px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .containerphotoCover {
@@ -96,6 +121,7 @@
   align-items: center;
   font-weight: 500;
   margin: 50px 70px 15px 50px;
+  max-width: 1600px;
 }
 .bogi {
   font-size: 14px;
@@ -109,8 +135,8 @@
   justify-content: flex-end;
   margin-left: auto;
 }
-.prev-button,
-.next-button {
+.host-prev-button,
+.host-next-button {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -120,10 +146,10 @@
   margin: 0;
   border-radius: 50%;
 }
-.prev-button {
+.host-prev-button {
   margin-left: 2px;
 }
-.next-button {
+.host-next-button {
   margin-left: 5px;
 }
 .categories-container {
@@ -188,12 +214,57 @@
   border-color: #333;
   transition: border-color 0.3s ease;
 }
+#hostSlider{
+  display: flex;
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+  flex-direction: row; 
+   white-space: nowrap; 
+}
+.host-prev-button,
+.host-next-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.host-prev-button{
+  margin-left: 2px;
+}
+.host-next-button{
+  margin-left: 5px;
+}
 .host_box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
+  display: flex;
+  max-width: 1600px;
+  flex-wrap: nowrap;
   padding: 0 70px 0 50px;
-  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+  overflow-x: hidden;
+}
+
+.host {
+  flex: 0 0 calc(16.666% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s ease !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.host:nth-child(n) {
+  display: block;
+}
+
+.host_box.transitioning {
+  transition: transform 0.5s ease;
 }
 .host_img1 {
   background-image: url("../images/online_images/host1.jpeg");
@@ -231,9 +302,6 @@
   background-size: 100% 100%;
   border-radius: 5%;
 }
-.host {
-  position: relative;
-}
 .wishlist-button {
   position: absolute;
   top: 10px;
@@ -259,6 +327,8 @@
   font-size: 15px;
   font-weight: 350;
   color: black;
+  overflow: hidden;
+  white-space: normal;
 }
 .info3 {
   font-size: 16px;
@@ -272,7 +342,70 @@
   align-items: center;
   font-weight: 500;
   margin: 100px 70px 15px 50px;
+  max-width: 1600px;
 }
+.best-prev-button,
+.best-next-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.best-prev-button{
+  margin-left: 2px;
+}
+.best-next-button{
+  margin-left: 5px;
+}
+.best_host_box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  overflow-x: auto;
+  padding: 0 70px 0 50px;
+}
+
+.best_host {
+  position: relative;
+  flex: 0 0 calc(16.666% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.best_host:last-child {
+  margin-right: 0;
+}
+
+.best_host img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .best_host_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .best_host {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .best_host:nth-child(-n+6) {
+    display: block;
+  }
+}
+
 .best_img1 {
   background-image: url("../images/online_images/best_1.jpeg");
   height: 250px;
@@ -316,8 +449,27 @@
   align-items: center;
   font-weight: 500;
   margin: 100px 70px 15px 50px;
+  max-width: 1600px;
+}
+.time-prev-button,
+.time-next-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.time-prev-button{
+  margin-left: 2px;
+}
+.time-next-button{
+  margin-left: 5px;
 }
 .six-time_box {
+  max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
@@ -410,7 +562,70 @@
   align-items: center;
   font-weight: 500;
   margin: 100px 70px 15px 50px;
+  max-width: 1600px;
 }
+.org-prev-button,
+.org-next-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.org-prev-button{
+  margin-left: 2px;
+}
+.org-next-button{
+  margin-left: 5px;
+}
+.organization_host_box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  overflow-x: auto;
+  padding: 0 70px 0 50px;
+}
+
+.organization_host {
+  position: relative;
+  flex: 0 0 calc(16.666% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.organization_host:last-child {
+  margin-right: 0;
+}
+
+.organization_host img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .organization_host_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .organization_host {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .organization_host:nth-child(-n+6) {
+    display: block;
+  }
+}
+
 .organization_img1 {
   background-image: url("../images/online_images/organization_1.jpeg");
   height: 250px;
@@ -468,13 +683,13 @@
   position: absolute;
   left: 50%;
   top: 8px;
-  width: 100%; /* 밑줄의 길이, 원하는 만큼 조절 가능 */
-  border-bottom: 2px solid; /* 밑줄의 두께와 색상 설정 */
-  transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+  width: 100%; 
+  border-bottom: 2px solid;
+  transform: translateX(-50%);
 }
 .view-all-button {
   background-color: transparent;
-  color: #717171; /* 원하는 색상으로 조절 */
+  color: #717171;
   border: none;
   padding: 0;
   text-align: left;
@@ -490,7 +705,56 @@
   align-items: center;
   font-weight: 500;
   margin: 100px 70px 15px 50px;
+  max-width: 1600px;
 }
+#weekSlider {
+  transition: transform 0.4s ease-in-out;
+}
+.custom-prev-button,
+.custom-next-button {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+.custom-prev-button{
+  margin-left: 2px;
+}
+.custom-next-button{
+  margin-left: 5px;
+}
+.weekend_host_box {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 1600px;
+  padding: 0 70px 0 50px;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  overflow: hidden;
+}
+.weekend_host {
+  position: relative;
+  flex: 0 0 calc(16.666% - 10px);
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden !important;
+  flex-direction: column;
+  display: none;
+  transition: transform 0.5s ease-in-out;
+}
+.weekend_host:nth-child(-n+6) {
+  display: flex;
+}
+.weekend_host.show {
+  display: flex;
+}
+
+
 .weekend_img1 {
   background-image: url("../images/online_images/weekend_1.jpeg");
   height: 250px;
@@ -528,6 +792,7 @@
   border-radius: 5%;
 }
 .more {
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: center;

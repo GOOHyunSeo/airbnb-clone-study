@@ -204,6 +204,7 @@
     border-radius: 50px / 50px;
     display: none;
     padding: 15px;
+    z-index: 1002;
 }
 
 
@@ -275,6 +276,14 @@ button {
     border-radius: 10px / 10px;
 }
 
+.world:hover,
+.europe:hover,
+.japan:hover,
+.eastasia:hover{
+    border: 1px solid #000000;
+    border-radius: 10px / 10px;
+}
+
 .local-name-space {
   margin-top: 30px;
   padding: 15px;
@@ -340,6 +349,27 @@ button {
     justify-content: center;
  }
 
+ .seoul-button:hover,
+  .busan-button:hover,
+  .sokcho-button:hover,
+  .gangreung-button:hover,
+  .jeonju-button:hover,
+  .daegu-button:hover,
+  .gyeongju-button:hover,
+  .yeosu-button:hover,
+  .seogui-button:hover,
+  .daejeon-button:hover,
+  .jeju-button:hover,
+  .incheon-button:hover{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     border: 1px solid #000000;
+     border-radius: 50px / 50px;
+     justify-content: center;
+  }
+
  .local-world-area {
     margin-top: 50px;
  }
@@ -396,6 +426,14 @@ button {
     border-radius: 50px / 50px;
 }
 
+.local-place-name button:hover{
+    width: 100%; /* 버튼의 가로 크기를 부모의 1fr에 맞춤 */
+    height: 34.4px; /* 버튼의 세로 크기를 부모의 1fr에 맞춤 */
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50px / 50px;
+}
+
  .calendar-view-space {
     position: absolute;
     top: calc(100% + 10px); /* 검색창 바로 아래에 위치하도록 설정, 10px는 여유 공간 */
@@ -407,7 +445,43 @@ button {
     border-radius: 50px / 50px;
     display: none;
     padding: 16px;
+    z-index: 1001;
  }
+
+.position-detail {
+    position: relative;
+}
+
+.invisible-screen {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 96%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px / 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: none;
+}
+
+.invisible-text {
+    font-size: 12px;
+    padding-left: 5px;
+    font-family: "Circular";
+    color: #555555;
+    font-weight: bold;
+}
+
+.invisible-duration {
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
 
  .detail-partition {
      display: flex;
@@ -617,6 +691,7 @@ button {
     border-radius: 50px / 50px;
     display: none;
     padding: 16px;
+    z-index: 1000;
  }
 
  .guest-setting {
@@ -653,7 +728,12 @@ button {
      justify-content: space-between;
  }
 
-.minus-btn,
+.minus-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .plus-btn {
     display: flex;
     align-items: center;

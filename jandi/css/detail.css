@@ -2,3 +2,41 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
+.header-width {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.invisible-section {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.invisible-section span {
+    padding: 20px;
+}
+
+.invisible-search-bar-space {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    display: none;
+
+}
+
+.full-searchbar-sapce {
+    padding: 10px;
+}

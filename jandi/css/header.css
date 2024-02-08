@@ -129,12 +129,14 @@ header {
 .header-link-ex:hover,
 .header-link-online:hover,
 .settings__host:hover,
-.settings__globe:hover {
+.settings__globe:hover,
+.hamburger-items:hover {
   background-color: #f7f7f7;
   cursor: pointer;
 }
 
 .setting__user {
+  position: relative;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -147,4 +149,34 @@ header {
 .setting__user:hover {
   cursor: pointer;
   box-shadow: 0px 3px 7px var(--borderColor);
+}
+
+/* setting 클릭 */
+.setting__user-hamburger {
+  z-index: 2;
+  width: 270px;
+  height: 230px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 10px 1px var(--borderColor);
+}
+.now {
+  color: black;
+}
+.hamburger-items {
+  padding: 15px;
+  transition: all 0.1s;
+}
+
+.visible {
+  display: none;
 }

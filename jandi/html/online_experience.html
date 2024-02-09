@@ -18,14 +18,13 @@
     <header>
       <div class="header experience__header">
         <div class="logo header-width">
-          <a href="./home.html"
-            ><img
-              class="logo__icon"
-              src="../images/pngegg.png"
-              alt="airbnb_logo"
-              height="80"
-              width="140"
-          /></a>
+          <img
+            class="logo__icon"
+            src="../images/pngegg.png"
+            alt="airbnb_logo"
+            height="80"
+            width="140"
+          />
         </div>
         <div class="header-width"></div>
         <div class="settings header-width">
@@ -51,15 +50,6 @@
               height="30"
               width="30"
             />
-            <div class="setting__user-hamburger visible">
-              <span class="hamburger-items now">회원 가입</span>
-              <span class="hamburger-items">로그인</span>
-              <hr />
-              <span class="hamburger-items now"
-                >당신의 공간을 에어비앤비하세요</span
-              >
-              <span class="hamburger-items now">도움말 센터</span>
-            </div>
           </div>
         </div>
       </div>
@@ -166,7 +156,8 @@
           <div class="online-category">엔터테인먼트</div>
           <div class="online-category">피트니스</div>
           <div class="online-category">역사문화</div>
-          <button class="move-up-button">&gt;</button>
+          <button class="move-up-button" id="moveLeftButton" style="display: none;" >&lt;</button>
+          <button class="move-up-button" id="moveRightButton">&gt;</button>
           <div class="online-category">마술</div>
         </div>
       </div>
@@ -359,189 +350,189 @@
             <div class="info3">최저가 ₩10,152<span>/인</span></div>
           </div>
         </div>
-        <div class="host">
-          <div class="organization_img1"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
+          <div class="host">
+            <div class="organization_img1"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
               >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="host">
+              <div class="info1">★ 4.92<span>(2,640) · 폴란드</span></div>
+              <div class="info2">
+                방 탈출 게임 연말연시 에디션 - 팀 활동으로 적합
+              </div>
+              <div class="info3">최저가 ₩24,962<span>/인</span></div>
+            </div>
           </div>
           <div class="host">
-            <div class="info1">★ 4.92<span>(2,640) · 폴란드</span></div>
-            <div class="info2">
-              방 탈출 게임 연말연시 에디션 - 팀 활동으로 적합
-            </div>
-            <div class="info3">최저가 ₩24,962<span>/인</span></div>
-          </div>
-        </div>
-        <div class="host">
-          <div class="organization_img2"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
+            <div class="organization_img2"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
               >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="host_info">
-            <div class="info1">★ 4.98<span>(1,027) · 포르투갈</span></div>
-            <div class="info2">
-              블편안한 분위기의 점성술, 별자리 읽기 워크숍
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div class="info3">최저가 ₩43,319<span>/인</span></div>
-          </div>
-        </div>
-        <div class="host">
-          <div class="organization_img3"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-              >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="host_info">
-            <div class="info1">★ 4.96<span>(620) · 이탈리아</span></div>
-            <div class="info2">시칠리아 가정집에서 카놀리 만드는 법 배우기</div>
-            <div class="info3">최저가 ₩25,992<span>/인</span></div>
-          </div>
-        </div>
-        <div class="host">
-          <div class="organization_img4"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-              >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="host_info">
-            <div class="info1">★ 4.95<span>(1,013) · 모로코</span></div>
-            <div class="info2">
-              가족과 함께 차근차근 쉽게 배우는 모로코 타진 요리
+            <div class="host_info">
+              <div class="info1">★ 4.98<span>(1,027) · 포르투갈</span></div>
+              <div class="info2">
+                블편안한 분위기의 점성술, 별자리 읽기 워크숍
+              </div>
+              <div class="info3">최저가 ₩43,319<span>/인</span></div>
             </div>
-            <div class="organization_info3">
-              최저<span>₩15,997</span>₩23,425
-              <p>//인</p>
-            </div>
-            <button class="view-all-button">요금 모두 보기</button>
           </div>
-        </div>
-        <div class="host">
-          <div class="organization_img5"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
+          <div class="host">
+            <div class="organization_img3"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
               >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="host_info">
-            <div class="info1">★ 4.98<span>(1,375) · 미국</span></div>
-            <div class="info2">전문가와 함께하는 샌드위치 만들기 수업</div>
-            <div class="info3">최저가 ₩22,662<span>/인</span></div>
-          </div>
-        </div>
-        <div class="host">
-          <div class="organization_img6"></div>
-          <div class="wishlist-container">
-            <button
-              aria-label="위시리스트에 추가"
-              data-testid="listing-card-save-button"
-              type="button"
-              class="wishlist-button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-              >
-                <path
-                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="host_info">
-            <div class="info1">★ 4.96<span>(255) · 미국</span></div>
-            <div class="info2">오악사카 소믈리에와 함께 메즈칼 음미하기</div>
-            <div class="organization_info3">
-              최저<span>₩25,328</span>₩20,263
-              <p>//인</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <button class="view-all-button">요금 모두 보기</button>
+            <div class="host_info">
+              <div class="info1">★ 4.96<span>(620) · 이탈리아</span></div>
+              <div class="info2">시칠리아 가정집에서 카놀리 만드는 법 배우기</div>
+              <div class="info3">최저가 ₩25,992<span>/인</span></div>
+            </div>
+          </div>
+          <div class="host">
+            <div class="organization_img4"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="host_info">
+              <div class="info1">★ 4.95<span>(1,013) · 모로코</span></div>
+              <div class="info2">
+                가족과 함께 차근차근 쉽게 배우는 모로코 타진 요리
+              </div>
+              <div class="organization_info3">
+                최저<span>₩15,997</span>₩23,425
+                <p>//인</p>
+              </div>
+              <button class="view-all-button">요금 모두 보기</button>
+            </div>
+          </div>
+          <div class="host">
+            <div class="organization_img5"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="host_info">
+              <div class="info1">★ 4.98<span>(1,375) · 미국</span></div>
+              <div class="info2">전문가와 함께하는 샌드위치 만들기 수업</div>
+              <div class="info3">최저가 ₩22,662<span>/인</span></div>
+            </div>
+          </div>
+          <div class="host">
+            <div class="organization_img6"></div>
+            <div class="wishlist-container">
+              <button
+                aria-label="위시리스트에 추가"
+                data-testid="listing-card-save-button"
+                type="button"
+                class="wishlist-button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <path
+                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="host_info">
+              <div class="info1">★ 4.96<span>(255) · 미국</span></div>
+              <div class="info2">오악사카 소믈리에와 함께 메즈칼 음미하기</div>
+              <div class="organization_info3">
+                최저<span>₩25,328</span>₩20,263
+                <p>//인</p>
+              </div>
+              <button class="view-all-button">요금 모두 보기</button>
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <!--베스트-->
     <section>
@@ -549,8 +540,8 @@
         베스트셀러 체험
         <div class="button-container">
           <div class="bogi">보기(94개)</div>
-          <button class="best-prev-button">&lt;</button>
-          <button class="best-next-button">&gt;</button>
+          <button class="best-prev-button" onclick="bestLSlide()">&lt;</button>
+          <button class="best-next-button" onclick="bestRSlide()">&gt;</button>
         </div>
       </div>
       <div class="best_host_box">
@@ -728,6 +719,188 @@
             <div class="info3">최저가 ₩19,996<span>/인</span></div>
           </div>
         </div>
+        <div class="best_host">
+          <div class="organization_img1"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.92<span>(2,640) · 폴란드</span></div>
+            <div class="info2">
+              방 탈출 게임 연말연시 에디션 - 팀 활동으로 적합
+            </div>
+            <div class="info3">최저가 ₩24,962<span>/인</span></div>
+          </div>
+        </div>
+        <div class="best_host">
+          <div class="organization_img2"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.98<span>(1,027) · 포르투갈</span></div>
+            <div class="info2">
+              블편안한 분위기의 점성술, 별자리 읽기 워크숍
+            </div>
+            <div class="info3">최저가 ₩43,319<span>/인</span></div>
+          </div>
+        </div>
+        <div class="best_host">
+          <div class="organization_img3"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.96<span>(620) · 이탈리아</span></div>
+            <div class="info2">시칠리아 가정집에서 카놀리 만드는 법 배우기</div>
+            <div class="info3">최저가 ₩25,992<span>/인</span></div>
+          </div>
+        </div>
+        <div class="best_host">
+          <div class="organization_img4"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.95<span>(1,013) · 모로코</span></div>
+            <div class="info2">
+              가족과 함께 차근차근 쉽게 배우는 모로코 타진 요리
+            </div>
+            <div class="organization_info3">
+              최저<span>₩15,997</span>₩23,425
+              <p>//인</p>
+            </div>
+            <button class="view-all-button">요금 모두 보기</button>
+          </div>
+        </div>
+        <div class="best_host">
+          <div class="organization_img5"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.98<span>(1,375) · 미국</span></div>
+            <div class="info2">전문가와 함께하는 샌드위치 만들기 수업</div>
+            <div class="info3">최저가 ₩22,662<span>/인</span></div>
+          </div>
+        </div>
+        <div class="best_host">
+          <div class="organization_img6"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.96<span>(255) · 미국</span></div>
+            <div class="info2">오악사카 소믈리에와 함께 메즈칼 음미하기</div>
+            <div class="organization_info3">
+              최저<span>₩25,328</span>₩20,263
+              <p>//인</p>
+            </div>
+            <button class="view-all-button">요금 모두 보기</button>
+          </div>
+        </div>
       </div>
     </section>
     <!--시간-->
@@ -736,8 +909,8 @@
         6시간 이내 시작
         <div class="button-container">
           <div class="time_bogi">보기(58개)</div>
-          <button class="time-prev-button">&lt;</button>
-          <button class="time-next-button">&gt;</button>
+          <button class="time-prev-button" onclick="timeLSlide()">&lt;</button>
+          <button class="time-next-button" onclick="timeRSlide()">&gt;</button>
         </div>
       </div>
       <div class="six-time_box">
@@ -839,7 +1012,108 @@
             <button class="time_button">오후 10:30</button>
           </div>
         </div>
-      </div>
+
+        <div class="time_box">
+          <img src="../images/online_images/time_2.jpeg" alt="Image 2" />
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="info">
+            <div class="time_info1">★ 4.93<span>(438) · 태국</span></div>
+            <div class="time_info2">
+              자연 가이드와 함께 자이언트 판다 만나기
+            </div>
+            <div class="time_info3">₩25,381~<span>/인</span></div>
+            <button class="time_button">오후 7:00</button>
+            <button class="time_button">오후 9:00</button>
+            <button class="time_button">오후 10:00</button>
+          </div>
+        </div>
+
+
+        <div class="time_box">
+          <img src="../images/online_images/time_1.jpeg" alt="Image 1" />
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="info">
+            <div class="time_info1">★ 4.91<span>(322) · 인도</span></div>
+            <div class="time_info2">
+              전문 투어 가이드와 함께하는 타지마할 도보 투어
+            </div>
+            <div class="time_info3">₩19,257~<span>/인</span></div>
+            <button class="time_button">오후 7:00</button>
+            <button class="time_button">오후 9:00</button>
+            <button class="time_button">오후 10:00</button>
+          </div>
+        </div>
+        
+        <div class="time_box">
+          <img src="../images/online_images/time_3.jpeg" alt="Image 3" />
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="info">
+            <div class="time_info1">★ 4.98<span>(1,544) · 영국</span></div>
+            <div class="time_info2">마술의 비밀</div>
+            <div class="time_info3">₩33,837~<span>/인</span></div>
+            <button class="time_button">오후 7:00</button>
+            <button class="time_button">오후 9:00</button>
+            <button class="time_button">오후 10:30</button>
+          </div>
+        </div>
+
     </section>
     <!--단체-->
     <section>
@@ -847,8 +1121,8 @@
         단체로 즐기기에 적합
         <div class="button-container">
           <div class="bogi">보기(172개)</div>
-          <button class="org-prev-button">&lt;</button>
-          <button class="org-next-button">&gt;</button>
+          <button class="org-prev-button" onclick="orgLSlide()">&lt;</button>
+          <button class="org-next-button" onclick="orgLSlide()">&gt;</button>
         </div>
       </div>
       <div class="organization_host_box">
@@ -1034,6 +1308,178 @@
             <button class="view-all-button">요금 모두 보기</button>
           </div>
         </div>
+        <div class="organization_host">
+          <div class="weekend_img1"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 5.0<span>(23) · 이집트</span></div>
+            <div class="info2">
+              현지 인사이더와 함께하는 이집트 여행 계획하기
+            </div>
+            <div class="info3">최저가 ₩2,665<span>/인</span></div>
+          </div>
+        </div>
+        <div class="organization_host">
+          <div class="weekend_img2"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.95<span>(605) · 페루</span></div>
+            <div class="info2">베다 점성술 체험</div>
+            <div class="info3">최저가 ₩96,026<span>/인</span></div>
+          </div>
+        </div>
+        <div class="organization_host">
+          <div class="weekend_img3"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.97<span>(62) · 스페인</span></div>
+            <div class="info2">캣과 함께하는 요가 수업</div>
+            <div class="info3">최저가 ₩31,730<span>/인</span></div>
+          </div>
+        </div>
+        <div class="organization_host">
+          <div class="weekend_img4"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.98<span>(42) · 프랑스</span></div>
+            <div class="info2">정통 프랑스식 라타투이 쉽게 만들기</div>
+            <div class="info3">최저가 ₩31,730<span>/인</span></div>
+          </div>
+        </div>
+        <div class="organization_host">
+          <div class="weekend_img5"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 4.97<span>(332) · 미국</span></div>
+            <div class="info2">
+              신년 특선 - 치료견과 함께 단체로 즐기는 타로점
+            </div>
+            <div class="info3">최저가 ₩33,301<span>/인</span></div>
+          </div>
+        </div>
+        <div class="organization_host">
+          <div class="weekend_img6"></div>
+          <div class="wishlist-container">
+            <button
+              aria-label="위시리스트에 추가"
+              data-testid="listing-card-save-button"
+              type="button"
+              class="wishlist-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="host_info">
+            <div class="info1">★ 5.0<span>(31) · 베트남</span></div>
+            <div class="info2">해바라기 리 딤섬 클래스/팀워크 구축에 적합</div>
+            <div class="info3">최저가 ₩31,650<span>/인</span></div>
+          </div>
+        </div>
       </div>
     </section>
     <!--주말-->
@@ -1042,15 +1488,11 @@
         이번 주말에 즐길 수 있는 체험
         <div class="button-container">
           <div class="bogi">보기(359개)</div>
-          <button class="custom-prev-button" onclick="week1Slide()">
-            &lt;
-          </button>
-          <button class="custom-next-button" onclick="week2Slide()">
-            &gt;
-          </button>
+          <button class="custom-prev-button" onclick="week1Slide()">&lt;</button>
+          <button class="custom-next-button" onclick="week2Slide()">&gt;</button>
         </div>
       </div>
-      <div class="weekend_host_box" id="weekSlider">
+      <div class="weekend_host_box"id ="weekSlider">
         <div class="weekend_host">
           <div class="weekend_img1"></div>
           <div class="wishlist-container">
@@ -1541,6 +1983,5 @@
         </div>
       </div>
     </footer>
-    <script src="../javascript/header.js"></script>
   </body>
 </html>

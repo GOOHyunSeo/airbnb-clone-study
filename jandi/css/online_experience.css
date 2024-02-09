@@ -252,7 +252,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
   position: relative;
-  display: inline-block;
+  display: block;
   transition: transform 0.5s ease !important;
   box-sizing: border-box;
   overflow: hidden;
@@ -469,18 +469,12 @@
   margin-left: 5px;
 }
 .six-time_box {
+  flex-wrap: wrap;
   max-width: 1600px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
   padding: 0 70px 0 50px;
-  margin-bottom: 15px;
-}
-.time_bogi {
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: underline;
-  margin-right: 15px;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
 }
 .time_box {
   position: relative;
@@ -489,6 +483,15 @@
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 10px;
+  flex: 0 0 calc(33.333% - 10px);
+  max-width: calc(33.333% - 10px);
+}
+
+.time_bogi {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-right: 15px;
 }
 .time_box .wishlist-button {
   position: absolute;
@@ -708,8 +711,10 @@
   max-width: 1600px;
 }
 #weekSlider {
-  transition: transform 0.4s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease;
 }
+
 .custom-prev-button,
 .custom-next-button {
   width: 32px;
@@ -729,24 +734,25 @@
 }
 .weekend_host_box {
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
   max-width: 1600px;
   padding: 0 70px 0 50px;
   transition: transform 0.5s ease-in-out;
   display: flex;
   overflow: hidden;
 }
+
 .weekend_host {
   position: relative;
   flex: 0 0 calc(16.666% - 10px);
   box-sizing: border-box;
   margin-right: 10px;
   margin-bottom: 10px;
-  overflow: hidden !important;
+  overflow-x: hidden;
   flex-direction: column;
-  display: none;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease, margin-left 0.5s ease;
 }
+
 .weekend_host:nth-child(-n+6) {
   display: flex;
 }

@@ -1,67 +1,334 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>하회마을 지산고택 사랑방 - Pungcheon-myeon, Andong, 한국의 게스트용 별채의 개인실</title>
-        <link rel="shortcut icon" type="image/x-icon" href="../images/airbnb_logo.png" />
-        <link href="../css/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <div class="header">
-                <div class="logo header-width">
-                    <a href="./home.html"
-                        ><img class="logo__icon" src="../images/pngegg.png" alt="airbnb_logo" height="80" width="140"
-                    /></a>
-                </div>
-                <div class="header-width">
-                    <div class="search-bar">
-                        <span class="search-bar-select">어디든지</span>
-                        <span class="search-bar-select">언제든 일주일</span>
-                        <span class="search-bar-select">게스트 추가</span>
-                        <button class="search-bar-button">
-                            <img src="../images/magnifying-glass.png" alt="search" height="15" width="15" />
-                        </button>
-                    </div>
-                    <div class="invisible-section">
-                        <span class>숙소</span>
-                        <span class>체험</span>
-                        <span class>온라인 체험</span>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      하회마을 지산고택 사랑방 - Pungcheon-myeon, Andong, 한국의 게스트용 별채의
+      개인실
+    </title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/airbnb_logo.png"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@400;700&display=swap"> -->
+    <script src="../js/index.js"></script>
+  </head>
+  <body>
+    <!-- 더 보기 js -->
+    <!-- info 영역 첫번째 꺼 -->
+    <div class="text5__box1__modal">
+      <div class="text5__box1__modal__background">
+        <div class="text5__box1__sub1">
+          <div class="text5__box1__sub1__button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 3;
+                overflow: visible;
+                position: relative;
+                left: 8px;
+                top: 8px;
+              "
+            >
+              <path d="m6 6 20 20M26 6 6 26"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="text5__box1__sub2">숙소 이용규칙</div>
+        <div class="text5__box1__sub3">에어비앤비 숙소는 다른 사람이 실제로 거주하는 집인 경우가 많으므로, 숙소를 소중히 다뤄주세요.</div>
+        <div class="text5__box1__sub4">체크인 및 체크아웃</div>
+        <div class="text5__box1__sub5">
+          <div class="text5__box1__sub5__jpg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 .33a15.67 15.67 0 1 1 0 31.34A15.67 15.67 0 0 1 16 .33zm0 2a13.67 13.67 0 1 0 0 27.34 13.67 13.67 0 0 0 0-27.34zm1 3v10.1l8.74 5.04-1 1.73L15 16.58V5.33z"></path></svg>
+          </div>
+          <div class="text5__box1__sub5__text">체크인 시간: 오후 3:00~오후 10:00</div>
+        </div>
+        
+        <div class="text5__box1__sub6">
+          <div class="text5__box1__sub6__jpg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 .33a15.67 15.67 0 1 1 0 31.34A15.67 15.67 0 0 1 16 .33zm0 2a13.67 13.67 0 1 0 0 27.34 13.67 13.67 0 0 0 0-27.34zm1 3v10.1l8.74 5.04-1 1.73L15 16.58V5.33z"></path></svg>
+          </div>
+          <div class="text5__box1__sub6__text">체크아웃 시간: 오전 11:00 전까지</div>
+        </div>
+        <div class="text5__box1__sub7">숙박 중</div>
+        <div class="text5__box1__sub8">
+          <div class="text5__box1__sub8__jpg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M22 5a6 6 0 0 1 3.64 10.77A9 9 0 0 1 31 23.74V24h-2a7 7 0 0 0-6-6.93v-2.2A4 4 0 0 0 22 7a4 4 0 0 0-3.68 5.57A5 5 0 0 1 21 17a4.99 4.99 0 0 1-1.6 3.67 9 9 0 0 1 5.6 8.06V29h-2a7 7 0 0 0-6-6.93v-2.24a3 3 0 1 0-2 0v2.24a7 7 0 0 0-6 6.69V29H7a9 9 0 0 1 5.6-8.34 5 5 0 0 1 1.08-8.09A4 4 0 1 0 9 14.87v2.2a7 7 0 0 0-6 6.69V24H1a9 9 0 0 1 5.36-8.23A6 6 0 1 1 15.92 10h.16A6 6 0 0 1 22 5z"></path></svg></div>
+          <div class="text5__box1__sub8__text">게스트 정원 2명</div>
+        </div>
+        <div class="text5__box1__sub9">
+          <div class="text5__box1__sub9__jpg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="m3.7 2.3 26 26-1.4 1.4-26-26zm8.17 13.81 1.44 1.44L9.6 22.8a2 2 0 0 0 1.98 3.13l.17-.04 4-1.07a1 1 0 0 1 .38-.03l.13.03 4 1.07a2 2 0 0 0 1.3-.1l1.46 1.47a4 4 0 0 1-3.09.6l-.2-.04-3.73-1-3.73 1a4 4 0 0 1-2.94-.35l-.2-.11-.2-.13a4 4 0 0 1-1.08-5.4l.11-.18zM27 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM5 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm22 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM21 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM11 4a4 4 0 0 1 3.38 6.14l-1.49-1.5a2 2 0 0 0-2.54-2.53L8.86 4.6A3.98 3.98 0 0 1 11 4zm10 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path></svg></div>
+          <div class="text5__box1__sub9__text">반려동물 동반 불가</div>
+        </div>
+        <div class="text5__box1__sub10">
+          <div class="text5__box1__sub10__jpg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M5.12 9.36 7 11.25v.05c.12 4.47 2.85 8.2 8.3 11.2l.39.21.27.14.3-.19c.46-.28.89-.57 1.3-.85L19 23.24c-.5.35-1 .7-1.55 1.04l2.2 2.92a1.13 1.13 0 0 1-.9 1.8H17v3h-2v-3h-1.75a1.13 1.13 0 0 1-.9-1.8l2.14-2.86C8.2 20.92 5 16.46 5 11c0-.56.04-1.1.12-1.64zM3.71 2.3l26 26-1.42 1.42-26-26zM16 25.67 15 27h2zM16 0c5.9 0 11 5.28 11 11 0 2.92-1.17 5.68-3.47 8.29l-1.42-1.42c1.79-2.06 2.74-4.17 2.87-6.33l.02-.27V11c0-4.64-4.21-9-9-9a8.98 8.98 0 0 0-6.73 3.03L7.85 3.6A10.97 10.97 0 0 1 16 0z"></path></svg></div>
+          <div class="text5__box1__sub10__text">파티나 이벤트 금지</div>
+        </div>
+        <div class="text5__box1__sub11">
+          <div class="text5__box1__sub11__jpg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="m3.7 2.3 26 26-1.4 1.4-26-26zM14.77 19l2 2H3v4h17.76l2 2H3a2 2 0 0 1-2-1.85V21a2 2 0 0 1 1.85-2H3zM30 19v6.76l-2-2V19zm-4 0v2.76L23.24 19zM21 3a4 4 0 0 1 3.36 6.18l-.1.14.13.04a8 8 0 0 1 5.6 7.4L30 17h-2a6 6 0 0 0-5.78-6H21V9a2 2 0 0 0 .15-4H21zm1 10a4 4 0 0 1 4 3.8v.2h-2a2 2 0 0 0-1.85-2H19.24l-2-2zM17 3v2a4 4 0 0 0-4 3.76l-1.68-1.69A6 6 0 0 1 16.78 3z"></path></svg></div>
+          <div class="text5__box1__sub11__text">흡연 금지</div>
+        </div>
+        <div class="text5__box1__sub12">
+          <div class="text5__box1__sub12__jpg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 1a4 4 0 0 1 3.81 2.8l.06.2h3.46A3.67 3.67 0 0 1 27 7.47l.01.2v19.66A3.67 3.67 0 0 1 23.53 31l-.2.01H8.67A3.67 3.67 0 0 1 5 27.53l-.01-.2V7.67A3.67 3.67 0 0 1 8.47 4l.2-.01h3.46l.04-.16a4 4 0 0 1 3.42-2.82L15.8 1zM9 6h-.33c-.88 0-1.6.67-1.66 1.52L7 7.67v19.66c0 .88.67 1.6 1.52 1.66l.15.01h14.66c.88 0 1.6-.67 1.66-1.52l.01-.15V7.67c0-.88-.67-1.6-1.52-1.66L23.33 6H23v5H9zm1 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm8 0v2h-6v-2zm-8-5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm10 0v2h-8v-2zM16 3a2 2 0 0 0-2 1.85V6h-3v3h10V6h-2.97L18 4.88A2 2 0 0 0 16 3zm0 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+          <div class="text5__box1__sub12__text">
+            <div class="text5__box1__sub12__text1">추가 이용규칙</div>
+            <div class="text5__box1__sub12__text2">지산고택은 11시 퇴실을 원칙으로합니다 퇴실이후 짐보관과 주차는 가능합니다</div>
+            <div class="text5__box1__sub12__text3">오전 7~10시에 간단한 커피와떡구이를 드립니다 원하는 시간을 말씀해주세요</div>
+            <div class="text5__box1__sub12__text4">방안에서는 취식이 불가합니다 한옥특성상 음식냄새가 심하게 뱁니다 양해부탁드립니다...</div>
+            <div class="text5__box1__sub12__text5">더 보기</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="settings header-width">
-                    <div class="settings__host">당신의 공간을 에어비앤비하세요</div>
-                    <div class="settings__globe">
-                        <img src="../images/world-wide-web.png" alt="globe" height="17" width="17" />
-                    </div>
-                    <div class="setting__user">
-                        <img src="../images/login-menu.png" alt="menu" height="20" width="20" />
-                        <img src="../images/login-icon.png" alt="icon" height="30" width="30" />
-                        <div class="setting__user-hamburger visible">
-                            <span class="hamburger-items now">회원 가입</span>
-                            <span class="hamburger-items">로그인</span>
-                            <hr />
-                            <span class="hamburger-items now">당신의 공간을 에어비앤비하세요</span>
-                            <span class="hamburger-items now">도움말 센터</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- info 영역 두번째 꺼 -->
+    <div class="text5__box2__modal">
+      <div class="text5__box2__modal__background">
+        <div class="text5__box2__sub1">
+          <div class="text5__box2__sub1__button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 3;
+                overflow: visible;
+                position: relative;
+                left: 8px;
+                top: 8px;
+              "
+            >
+              <path d="m6 6 20 20M26 6 6 26"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="text5__box2__sub2">안전 및 숙소</div>
+        <div class="text5__box2__sub3">
+          나중에 당황하는 일이 없도록 호스트 숙소에 대한 중요 정보를 미리
+          확인하세요.
+        </div>
+        <div class="text5__box2__sub4">안전 관련 사항</div>
+        <div class="text5__box2__sub5">
+          <div class="text5__box2__sub5__img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                height: 24px;
+                width: 24px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="m20.28 24.52 5.2 5.2A3.99 3.99 0 0 1 20 26c0-.52.1-1.02.28-1.48zM11.76 16l1.82 1.83L9.41 22h8.35l2 2h-8.3a4 4 0 1 1-5.3-1.56l.07-.07.06-.08L10.6 18h-1.6a3 3 0 0 0-1.97.74l-.14.14-3.83 3.83-1.42-1.42 3.83-3.83a5 5 0 0 1 3.27-1.45L9 16zM3.98 2.56l25.46 25.46-1.42 1.42L2.56 3.98zM8 24a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM31 2v2h-2.34a3 3 0 0 0-1.98.74l-.14.14-.54.53V19c0 .8-.19 1.56-.52 2.23l-1.56-1.55c.03-.1.05-.22.06-.33l.01-.17L24 19V7.41l-6.17 6.17-1.42-1.41-1.3-1.41A3.99 3.99 0 0 1 18 4a4 4 0 0 1 3.8 2.78l3.32-3.32a5 5 0 0 1 3.27-1.45l.27-.01zM18 6a2 2 0 1 0 .22 3.99l.18-.03.13-.03.03-.01a2 2 0 0 0 1.24-1.04l.07-.16.07-.22.03-.15.02-.15v-.03L20 8a2 2 0 0 0-1.85-2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="text5__box2__sub5__text">
+            어린이와 유아에게 적합하지 않음
+          </div>
+        </div>
+        <div class="text5__box2__sub6">안전 장치</div>
+        <div class="text5__box2__sub7">
+          <div class="text5__box2__sub7__img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                height: 24px;
+                width: 24px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="M2.05 6.3 4 8.23V25a3 3 0 0 0 2.82 3h16.94l1.95 1.95c-.16.02-.33.04-.5.04L25 30H7a5 5 0 0 1-5-4.78V7c0-.24.02-.48.05-.7zm1.66-4 26 26-1.42 1.4-26-26 1.42-1.4zM25 2a5 5 0 0 1 5 4.78V25a5 5 0 0 1-.05.7L28 23.77V7a3 3 0 0 0-2.82-3H8.24L6.3 2.05c.16-.02.33-.04.5-.04L7 2h18zM11.1 17a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="text5__box2__sub7__text">
+            <div class="text5__box2__sub7__text1">
+              일산화탄소 경보기 설치 여부 정보 없음
             </div>
-            <div class="invisible-search-bar-space">
-                <!---------------------검색창--------------------->
-                <!-- 전체 검색 바 -->
-                <div class="full-searchbar-space">
-                    <!-- 여행지 검색 부분 -->
-                    <div class="travel-spot">
-                        <div class="travel-spot-circle" onclick="showLocalSearchArea()">
-                            <label class="travel-spot-search">
-                                <div class="travel-spot-text-space">
-                                    <div class="travel-spot-naming" style="font-weight: bold">여행지</div>
-                                    <input
+            <div class="text5__box2__sub7__text2">
+              호스트가 숙소 내 일산화탄소 경보기 설치 여부를 보고하지
+              않았습니다. 휴대용 경보기를 챙겨가실 것을 권해드립니다.
+            </div>
+          </div>
+        </div>
+        <div class="text5__box2__sub8">
+          <div class="text5__box2__sub8__img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                height: 24px;
+                width: 24px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="m3.49 7.73 1.44 1.44A12.94 12.94 0 0 0 3 16a13 13 0 0 0 19.82 11.07l1.45 1.44A14.93 14.93 0 0 1 16 31 15 15 0 0 1 3.49 7.73zm.22-5.44 26 26-1.42 1.42-26-26 1.42-1.42zM16 1a15 15 0 0 1 12.52 23.27l-1.45-1.45A12.94 12.94 0 0 0 29 16 13 13 0 0 0 16 3a12.94 12.94 0 0 0-6.83 1.93L7.74 3.5A14.93 14.93 0 0 1 16 1zm-4.9 16a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="text5__box2__sub8__text">
+            <div class="text5__box2__sub8__text1">
+              화재경보기 설치 여부 정보 없음
+            </div>
+            <div class="text5__box2__sub8__text2">
+              호스트가 숙소 내 화재경보기 설치 여부를 보고하지 않았습니다.
+              휴대용 화재경보기를 챙겨가실 것을 권해드립니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info 영역 세번째 꺼 -->
+    <div class="text3__box3__modal">
+      <div class="text3__box3__modal__background">
+        <div class="text3__box3__sub1">
+          <div class="text3__box3__sub1__button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 3;
+                overflow: visible;
+                position: relative;
+                left: 8px;
+                top: 8px;
+              "
+            >
+              <path d="m6 6 20 20M26 6 6 26"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="text3__box3__sub2">환불 정책</div>
+        <div class="text3__box3__sub3">취소:</div>
+        <div class="text3__box3__sub4">
+          <div class="text3__box3__sub4__box1">
+            <div class="text3__box3__sub4__box1__text1">2월 10일</div>
+            <div class="text3__box3__sub4__box1__text2">오전 11:00</div>
+            <div class="text3__box3__sub4__box1__text3">(체크아웃)</div>
+          </div>
+          <div class="text3__box3__sub4__box2">환불 불가</div>
+        </div>
+        <div class="text3__box3__sub5">환불 정책 자세히 알아보기</div>
+        </div>  
+      </div>
+    </div>
+
+    <!-- header -->
+    <header>
+      <div class="header">
+        <div class="logo header-width">
+          <a href="./home.html"
+            ><img
+              class="logo__icon"
+              src="../images/pngegg.png"
+              alt="airbnb_logo"
+              height="80"
+              width="140"
+          /></a>
+        </div>
+        <div class="header-width">
+          <div class="search-bar">
+            <span class="search-bar-select">어디든지</span>
+            <span class="search-bar-select">언제든 일주일</span>
+            <span class="search-bar-select">게스트 추가</span>
+            <button class="search-bar-button">
+              <img
+                src="../images/magnifying-glass.png"
+                alt="search"
+                height="15"
+                width="15"
+              />
+            </button>
+          </div>
+          <div class="invisible-section">
+            <span class>숙소</span>
+            <span class>체험</span>
+            <span class>온라인 체험</span>
+          </div>
+        </div>
+
+        <div class="settings header-width">
+          <div class="settings__host">당신의 공간을 에어비앤비하세요</div>
+          <div class="settings__globe">
+            <img
+              src="../images/world-wide-web.png"
+              alt="globe"
+              height="17"
+              width="17"
+            />
+          </div>
+          <div class="setting__user">
+            <img
+              src="../images/login-menu.png"
+              alt="menu"
+              height="20"
+              width="20"
+            />
+            <img
+              src="../images/login-icon.png"
+              alt="icon"
+              height="30"
+              width="30"
+            />
+          </div>
+        </div>
+      </div>
+        <div class="invisible-search-bar-space">
+            <!---------------------검색창--------------------->
+            <!-- 전체 검색 바 -->
+            <div class="full-searchbar-space">
+                <!-- 여행지 검색 부분 -->
+                <div class="travel-spot">
+                    <div class="travel-spot-circle" onclick="showLocalSearchArea()">
+                        <label class="travel-spot-search">
+                            <div class="travel-spot-text-space">
+                                <div class="travel-spot-naming" style="font-weight: bold">여행지</div>
+                                <input
                                         class="travle-spot-name-input"
                                         style="border: none; background: transparent"
                                         aria-autocomplete="none"
@@ -75,231 +342,650 @@
                                         placeholder="여행지 검색"
                                         data-testid="structured-search-input-field-query"
                                         value
-                                    />
-                                </div>
-                            </label>
-                        </div>
-                        <div class="local-search-area">
-                            <section>
-                                <div class="local-search-background">
-                                    <div class="search-menu">
-                                        <div class="map-space">
-                                            <div
+                                />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="local-search-area">
+                        <section>
+                            <div class="local-search-background">
+                                <div class="search-menu">
+                                    <div class="map-space">
+                                        <div
                                                 class="name-search"
                                                 style="font-family: Circular; font-size: 14px; color: #222222"
-                                            >
-                                                지역으로 검색하기
-                                            </div>
-                                            <div class="map-search">
-                                                <div class="full-search-area">
-                                                    <button class="full-map" aria-pressed="false" type="button">
-                                                        <img
+                                        >
+                                            지역으로 검색하기
+                                        </div>
+                                        <div class="map-search">
+                                            <div class="full-search-area">
+                                                <button class="full-map" aria-pressed="false" type="button">
+                                                    <img
                                                             class="world"
                                                             src="../images/image-world.jpg"
                                                             style="width: 94.6px; height: 94.6px"
-                                                        />
-                                                    </button>
-                                                    <div aria-hidden="true" style="font-size: 14px; color: #222222">
-                                                        유연한 검색
-                                                    </div>
+                                                    />
+                                                </button>
+                                                <div aria-hidden="true" style="font-size: 14px; color: #222222">
+                                                    유연한 검색
                                                 </div>
-                                                <div class="europe-search-area">
-                                                    <button class="europe-map" aria-pressed="false" type="button">
-                                                        <img
+                                            </div>
+                                            <div class="europe-search-area">
+                                                <button class="europe-map" aria-pressed="false" type="button">
+                                                    <img
                                                             class="europe"
                                                             src="../images/image-europe.jpg"
                                                             style="width: 94.6px; height: 94.6px"
-                                                        />
-                                                    </button>
-                                                    <div aria-hidden="true" style="font-size: 14px; color: #222222">
-                                                        유럽
-                                                    </div>
+                                                    />
+                                                </button>
+                                                <div aria-hidden="true" style="font-size: 14px; color: #222222">
+                                                    유럽
                                                 </div>
-                                                <div class="japan-search-area">
-                                                    <button class="japan-map" aria-pressed="false" type="button">
-                                                        <img
+                                            </div>
+                                            <div class="japan-search-area">
+                                                <button class="japan-map" aria-pressed="false" type="button">
+                                                    <img
                                                             class="japan"
                                                             src="../images/image-japan.jpg"
                                                             style="width: 94.6px; height: 94.6px"
-                                                        />
-                                                    </button>
-                                                    <div aria-hidden="true" style="font-size: 14px; color: #222222">
-                                                        일본
-                                                    </div>
+                                                    />
+                                                </button>
+                                                <div aria-hidden="true" style="font-size: 14px; color: #222222">
+                                                    일본
                                                 </div>
-                                                <div class="eastaisa-search-area">
-                                                    <button class="eastasia-map" aria-pressed="false" type="button">
-                                                        <img
+                                            </div>
+                                            <div class="eastaisa-search-area">
+                                                <button class="eastasia-map" aria-pressed="false" type="button">
+                                                    <img
                                                             class="eastasia"
                                                             src="../images/image-eastaisa.jpg"
                                                             style="width: 94.6px; height: 94.6px"
-                                                        />
-                                                    </button>
-                                                    <div aria-hidden="true" style="font-size: 14px; color: #222222">
-                                                        동남아시아
+                                                    />
+                                                </button>
+                                                <div aria-hidden="true" style="font-size: 14px; color: #222222">
+                                                    동남아시아
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="local-name-space">
+                                        <div class="local-korea-area">
+                                            <div
+                                                    class="naming-korea"
+                                                    style="font-family: Circular; font-size: 14px; color: #222222"
+                                            >
+                                                한국
+                                            </div>
+                                            <div class="city-button-area">
+                                                <div class="korea-city">
+                                                    <div class="seoul-area">
+                                                        <button class="seoul-button">서울</button>
+                                                    </div>
+                                                    <div class="busan-area">
+                                                        <button class="busan-button">부산</button>
+                                                    </div>
+                                                    <div class="sokcho-area">
+                                                        <button class="sokcho-button">속초</button>
+                                                    </div>
+                                                    <div class="gangreung-area">
+                                                        <button class="gangreung-button">강릉</button>
+                                                    </div>
+                                                    <div class="jeonju-area">
+                                                        <button class="jeonju-button">전주</button>
+                                                    </div>
+                                                    <div class="daegu-area">
+                                                        <button class="daegu-button">대구</button>
+                                                    </div>
+                                                    <div class="gyeongju-area">
+                                                        <button class="gyeongju-button">경주</button>
+                                                    </div>
+                                                    <div class="yeosu-area">
+                                                        <button class="yeosu-button">여수</button>
+                                                    </div>
+                                                    <div class="seogui-area">
+                                                        <button class="seogui-button">서귀포</button>
+                                                    </div>
+                                                    <div class="daejeon-area">
+                                                        <button class="daejeon-button">대전</button>
+                                                    </div>
+                                                    <div class="jeju-area">
+                                                        <button class="jeju-button">제주도</button>
+                                                    </div>
+                                                    <div class="incheon-area">
+                                                        <button class="incheon-button">인천</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="local-name-space">
-                                            <div class="local-korea-area">
-                                                <div
-                                                    class="naming-korea"
-                                                    style="font-family: Circular; font-size: 14px; color: #222222"
-                                                >
-                                                    한국
-                                                </div>
-                                                <div class="city-button-area">
-                                                    <div class="korea-city">
-                                                        <div class="seoul-area">
-                                                            <button class="seoul-button">서울</button>
-                                                        </div>
-                                                        <div class="busan-area">
-                                                            <button class="busan-button">부산</button>
-                                                        </div>
-                                                        <div class="sokcho-area">
-                                                            <button class="sokcho-button">속초</button>
-                                                        </div>
-                                                        <div class="gangreung-area">
-                                                            <button class="gangreung-button">강릉</button>
-                                                        </div>
-                                                        <div class="jeonju-area">
-                                                            <button class="jeonju-button">전주</button>
-                                                        </div>
-                                                        <div class="daegu-area">
-                                                            <button class="daegu-button">대구</button>
-                                                        </div>
-                                                        <div class="gyeongju-area">
-                                                            <button class="gyeongju-button">경주</button>
-                                                        </div>
-                                                        <div class="yeosu-area">
-                                                            <button class="yeosu-button">여수</button>
-                                                        </div>
-                                                        <div class="seogui-area">
-                                                            <button class="seogui-button">서귀포</button>
-                                                        </div>
-                                                        <div class="daejeon-area">
-                                                            <button class="daejeon-button">대전</button>
-                                                        </div>
-                                                        <div class="jeju-area">
-                                                            <button class="jeju-button">제주도</button>
-                                                        </div>
-                                                        <div class="incheon-area">
-                                                            <button class="incheon-button">인천</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="local-world-area">
-                                                <div class="world-feild">
-                                                    <div class="land-name">
-                                                        <div class="land-tap-list" role="tablist">
-                                                            <button
+                                        <div class="local-world-area">
+                                            <div class="world-feild">
+                                                <div class="land-name">
+                                                    <div class="land-tap-list" role="tablist">
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="all-world-btn"
                                                                 role="tab"
-                                                            >
-                                                                전 세계
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            전 세계
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="eastasia-btn"
                                                                 role="tab"
-                                                            >
-                                                                동아시아
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            동아시아
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="es-asia-btn"
                                                                 role="tab"
-                                                            >
-                                                                동남아시아
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            동남아시아
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="europe-btn"
                                                                 role="tab"
-                                                            >
-                                                                유럽
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            유럽
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="ns-america-btn"
                                                                 role="tab"
-                                                            >
-                                                                북남미
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            북남미
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="oseania-btn"
                                                                 role="tab"
-                                                            >
-                                                                오세아니아
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            오세아니아
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="etc-asia-btn"
                                                                 role="tab"
-                                                            >
-                                                                기타 아시아 지역
-                                                            </button>
-                                                            <button
+                                                        >
+                                                            기타 아시아 지역
+                                                        </button>
+                                                        <button
                                                                 type="button"
                                                                 aria-selected="false"
                                                                 class="africa-btn"
                                                                 role="tab"
+                                                        >
+                                                            아프리카
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="country-name"></div>
+                                            </div>
+                                        </div>
+                                        <div class="local-hot-place">
+                                            <div class="local-place-name">
+                                                <div class="osaka">
+                                                    <button class="osaka-button">오사카</button>
+                                                </div>
+                                                <div class="dokyo">
+                                                    <button class="dokyo-button">도쿄</button>
+                                                </div>
+                                                <div class="hukuoka">
+                                                    <button class="hukuoka-button">후쿠오카</button>
+                                                </div>
+                                                <div class="bangkok">
+                                                    <button class="bangkok-button">방콕</button>
+                                                </div>
+                                                <div class="london">
+                                                    <button class="london-button">런던</button>
+                                                </div>
+                                                <div class="chiangmai">
+                                                    <button class="chiangmai-button">치앙마이</button>
+                                                </div>
+                                                <div class="taipei">
+                                                    <button class="taipei-button">타이베이</button>
+                                                </div>
+                                                <div class="sibuya">
+                                                    <button class="sibuya-button">시부야</button>
+                                                </div>
+                                                <div class="sydney">
+                                                    <button class="sydney-button">시드니</button>
+                                                </div>
+                                                <div class="satporo">
+                                                    <button class="satporo-button">삿포로</button>
+                                                </div>
+                                                <div class="sinjuku">
+                                                    <button class="sinjuku-button">신주쿠</button>
+                                                </div>
+                                                <div class="greendebalt">
+                                                    <button class="greendebalt-button">그린데발트</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- 검색창 구분선 -->
+                <div class="partition"></div>
+
+                <!-- 체크인, 체크아웃 부분 -->
+                <div class="check-inorout">
+                    <div class="full-check-inorout-space">
+                        <div class="position-detail">
+                            <div class="invisible-screen">
+                                <div class="invisible-text">날짜</div>
+                                <div class="invisible-duration">3월4일부터 3월6일까지</div>
+                            </div>
+                            <div class="check-in-area">
+                                <div
+                                        class="check-in-square"
+                                        role="button"
+                                        tabindex="0"
+                                        area-expanded="false"
+                                        data-testid="structured-search-input-field-split-dates-0"
+                                >
+                                    <div class="check-in-and-date">
+                                        <div class="check-in-naming" style="font-weight: bold">체크인</div>
+                                        <div class="in-date-add">날짜 추가</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 검색창 구분선 -->
+                            <div class="partition"></div>
+
+                            <div class="check-out-area">
+                                <div
+                                        class="check-out-square"
+                                        role="button"
+                                        tabindex="0"
+                                        area-expanded="false"
+                                        data-testid="structured-search-input-field-split-dates-1"
+                                >
+                                    <div class="check-out-and-date">
+                                        <div class="check-out-naming" style="font-weight: bold">체크아웃</div>
+                                        <div class="out-date-add">날짜 추가</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar-view-space">
+                            <section>
+                                <div class="schedule-select-area">
+                                    <div class="detail-partition">
+                                        <div id="tabs">
+                                            <div class="tab-select-area">
+                                                <div class="tab-title">
+                                                    <div class="select-title-tab" role="tablist">
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="date-select"
+                                                                role="tab"
+                                                                style="font-weight: bold"
+                                                        >
+                                                            날짜 지정
+                                                        </button>
+
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="month-part"
+                                                                role="tab"
+                                                                style="font-weight: bold"
+                                                        >
+                                                            월 단위
+                                                        </button>
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="flexible-schedule"
+                                                                role="tab"
+                                                                style="font-weight: bold"
+                                                        >
+                                                            유연한 일정
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab_contents">
+                                            <div class="tab1">
+                                                <img
+                                                        class="calendar-area"
+                                                        src="../images/select_calendar.jpg"
+                                                        style="width: 720px; height: 380px"
+                                                />
+
+                                                <div class="add-date-button-area">
+                                                    <div class="button-control">
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="current-date"
+                                                                style="font-size: 12px; color: #222222"
+                                                        >
+                                                            정확한 날짜
+                                                        </button>
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="plus-one"
+                                                                style="font-size: 12px; color: #222222"
+                                                        >
+                                                            ± 1일
+                                                        </button>
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="plus-two"
+                                                                style="font-size: 12px; color: #222222"
+                                                        >
+                                                            ± 2일
+                                                        </button>
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="plus-three"
+                                                                style="font-size: 12px; color: #222222"
+                                                        >
+                                                            ± 3일
+                                                        </button>
+                                                        <button
+                                                                type="button"
+                                                                aria-selected="true"
+                                                                class="plus-week"
+                                                                style="font-size: 12px; color: #222222"
+                                                        >
+                                                            ± 7일
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab2">
+                                                <div class="travel-duration-space">
+                                                    <div id="tab2">
+                                                        <div class="duration-section">
+                                                            <div class="when-is-travel" style="font-weight: bold">
+                                                                여행 날짜는 언제인가요?
+                                                            </div>
+                                                            <div class="duration-image">
+                                                                <img
+                                                                        class="duration-setting"
+                                                                        src="../images/travel-duration.PNG"
+                                                                        style="width: 400px; height: 360px"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab3">
+                                                <div class="schedule-setting-space">
+                                                    <div class="select-how-long" style="font-weight: bold">
+                                                        숙박 기간을 선택하세요.
+                                                    </div>
+                                                    <div class="duration-button-area">
+                                                        <div class="durationBtn">
+                                                            <button
+                                                                    type="button"
+                                                                    aria-selected="true"
+                                                                    class="weekend"
+                                                                    style="font-size: 14px; color: #222222"
                                                             >
-                                                                아프리카
+                                                                주말
+                                                            </button>
+                                                            <button
+                                                                    type="button"
+                                                                    aria-selected="true"
+                                                                    class="one-week"
+                                                                    style="font-size: 14px; color: #222222"
+                                                            >
+                                                                일주일
+                                                            </button>
+                                                            <button
+                                                                    type="button"
+                                                                    aria-selected="true"
+                                                                    class="one-month"
+                                                                    style="font-size: 14px; color: #222222"
+                                                            >
+                                                                한 달
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <div class="country-name"></div>
-                                                </div>
-                                            </div>
-                                            <div class="local-hot-place">
-                                                <div class="local-place-name">
-                                                    <div class="osaka">
-                                                        <button class="osaka-button">오사카</button>
+                                                    <div class="select-when-travel" style="font-weight: bold">
+                                                        여행 날짜를 선택하세요.
                                                     </div>
-                                                    <div class="dokyo">
-                                                        <button class="dokyo-button">도쿄</button>
-                                                    </div>
-                                                    <div class="hukuoka">
-                                                        <button class="hukuoka-button">후쿠오카</button>
-                                                    </div>
-                                                    <div class="bangkok">
-                                                        <button class="bangkok-button">방콕</button>
-                                                    </div>
-                                                    <div class="london">
-                                                        <button class="london-button">런던</button>
-                                                    </div>
-                                                    <div class="chiangmai">
-                                                        <button class="chiangmai-button">치앙마이</button>
-                                                    </div>
-                                                    <div class="taipei">
-                                                        <button class="taipei-button">타이베이</button>
-                                                    </div>
-                                                    <div class="sibuya">
-                                                        <button class="sibuya-button">시부야</button>
-                                                    </div>
-                                                    <div class="sydney">
-                                                        <button class="sydney-button">시드니</button>
-                                                    </div>
-                                                    <div class="satporo">
-                                                        <button class="satporo-button">삿포로</button>
-                                                    </div>
-                                                    <div class="sinjuku">
-                                                        <button class="sinjuku-button">신주쿠</button>
-                                                    </div>
-                                                    <div class="greendebalt">
-                                                        <button class="greendebalt-button">그린데발트</button>
+                                                    <div class="month-collection">
+                                                        <button class="month1" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month1-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                1월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month2" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month2-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                2월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month3" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month3-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                3월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month4" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month4-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                4월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month5" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month5-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                5월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month6" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month6-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                6월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month7" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month7-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                7월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month8" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month8-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                8월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month9" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month9-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                9월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month10" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month10-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                10월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month11" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month11-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                11월
+                                                            </div>
+                                                        </button>
+                                                        <button class="month12" style="width: 120px; height: 134px">
+                                                            <div class="calendar-choose-image">
+                                                                <img
+                                                                        class="month12-icon"
+                                                                        src="../images/calendar-icon.jpg"
+                                                                        style="width: 32px; height: 32px"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                    style="
+                                                                        font-size: 14px;
+                                                                        font-family: Circular;
+                                                                        font-weight: bold;
+                                                                    "
+                                                            >
+                                                                12월
+                                                            </div>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,489 +995,70 @@
                             </section>
                         </div>
                     </div>
+                </div>
 
-                    <!-- 검색창 구분선 -->
-                    <div class="partition"></div>
+                <!-- 검색창 구분선 -->
+                <div class="partition"></div>
 
-                    <!-- 체크인, 체크아웃 부분 -->
-                    <div class="check-inorout">
-                        <div class="full-check-inorout-space">
-                            <div class="position-detail">
-                                <div class="invisible-screen">
-                                    <div class="invisible-text">날짜</div>
-                                    <div class="invisible-duration">3월4일부터 3월6일까지</div>
+                <!-- 여행자 선택 부분 -->
+                <div class="guest-select">
+                    <div class="guest-select-circle">
+                        <div class="guest-select-and-search">
+                            <div class="guest-select-area">
+                                <div class="guest-select-and-add">
+                                    <div class="guest-naming" style="font-weight: bold">여행자</div>
+                                    <div class="guest-add">게스트 추가</div>
                                 </div>
-                                <div class="check-in-area">
-                                    <div
-                                        class="check-in-square"
-                                        role="button"
-                                        tabindex="0"
-                                        area-expanded="false"
-                                        data-testid="structured-search-input-field-split-dates-0"
-                                    >
-                                        <div class="check-in-and-date">
-                                            <div class="check-in-naming" style="font-weight: bold">체크인</div>
-                                            <div class="in-date-add">날짜 추가</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 검색창 구분선 -->
-                                <div class="partition"></div>
-
-                                <div class="check-out-area">
-                                    <div
-                                        class="check-out-square"
-                                        role="button"
-                                        tabindex="0"
-                                        area-expanded="false"
-                                        data-testid="structured-search-input-field-split-dates-1"
-                                    >
-                                        <div class="check-out-and-date">
-                                            <div class="check-out-naming" style="font-weight: bold">체크아웃</div>
-                                            <div class="out-date-add">날짜 추가</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calendar-view-space">
-                                <section>
-                                    <div class="schedule-select-area">
-                                        <div class="detail-partition">
-                                            <div id="tabs">
-                                                <div class="tab-select-area">
-                                                    <div class="tab-title">
-                                                        <div class="select-title-tab" role="tablist">
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="date-select"
-                                                                role="tab"
-                                                                style="font-weight: bold"
-                                                            >
-                                                                날짜 지정
-                                                            </button>
-
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="month-part"
-                                                                role="tab"
-                                                                style="font-weight: bold"
-                                                            >
-                                                                월 단위
-                                                            </button>
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="flexible-schedule"
-                                                                role="tab"
-                                                                style="font-weight: bold"
-                                                            >
-                                                                유연한 일정
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab_contents">
-                                                <div class="tab1">
-                                                    <img
-                                                        class="calendar-area"
-                                                        src="../images/select_calendar.jpg"
-                                                        style="width: 720px; height: 380px"
-                                                    />
-
-                                                    <div class="add-date-button-area">
-                                                        <div class="button-control">
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="current-date"
-                                                                style="font-size: 12px; color: #222222"
-                                                            >
-                                                                정확한 날짜
-                                                            </button>
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="plus-one"
-                                                                style="font-size: 12px; color: #222222"
-                                                            >
-                                                                ± 1일
-                                                            </button>
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="plus-two"
-                                                                style="font-size: 12px; color: #222222"
-                                                            >
-                                                                ± 2일
-                                                            </button>
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="plus-three"
-                                                                style="font-size: 12px; color: #222222"
-                                                            >
-                                                                ± 3일
-                                                            </button>
-                                                            <button
-                                                                type="button"
-                                                                aria-selected="true"
-                                                                class="plus-week"
-                                                                style="font-size: 12px; color: #222222"
-                                                            >
-                                                                ± 7일
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab2">
-                                                    <div class="travel-duration-space">
-                                                        <div id="tab2">
-                                                            <div class="duration-section">
-                                                                <div class="when-is-travel" style="font-weight: bold">
-                                                                    여행 날짜는 언제인가요?
-                                                                </div>
-                                                                <div class="duration-image">
-                                                                    <img
-                                                                        class="duration-setting"
-                                                                        src="../images/travel-duration.PNG"
-                                                                        style="width: 400px; height: 360px"
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab3">
-                                                    <div class="schedule-setting-space">
-                                                        <div class="select-how-long" style="font-weight: bold">
-                                                            숙박 기간을 선택하세요.
-                                                        </div>
-                                                        <div class="duration-button-area">
-                                                            <div class="durationBtn">
-                                                                <button
-                                                                    type="button"
-                                                                    aria-selected="true"
-                                                                    class="weekend"
-                                                                    style="font-size: 14px; color: #222222"
-                                                                >
-                                                                    주말
-                                                                </button>
-                                                                <button
-                                                                    type="button"
-                                                                    aria-selected="true"
-                                                                    class="one-week"
-                                                                    style="font-size: 14px; color: #222222"
-                                                                >
-                                                                    일주일
-                                                                </button>
-                                                                <button
-                                                                    type="button"
-                                                                    aria-selected="true"
-                                                                    class="one-month"
-                                                                    style="font-size: 14px; color: #222222"
-                                                                >
-                                                                    한 달
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="select-when-travel" style="font-weight: bold">
-                                                            여행 날짜를 선택하세요.
-                                                        </div>
-                                                        <div class="month-collection">
-                                                            <button class="month1" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month1-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    1월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month2" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month2-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    2월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month3" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month3-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    3월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month4" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month4-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    4월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month5" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month5-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    5월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month6" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month6-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    6월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month7" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month7-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    7월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month8" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month8-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    8월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month9" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month9-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    9월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month10" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month10-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    10월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month11" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month11-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    11월
-                                                                </div>
-                                                            </button>
-                                                            <button class="month12" style="width: 120px; height: 134px">
-                                                                <div class="calendar-choose-image">
-                                                                    <img
-                                                                        class="month12-icon"
-                                                                        src="../images/calendar-icon.jpg"
-                                                                        style="width: 32px; height: 32px"
-                                                                    />
-                                                                </div>
-                                                                <div
-                                                                    style="
-                                                                        font-size: 14px;
-                                                                        font-family: Circular;
-                                                                        font-weight: bold;
-                                                                    "
-                                                                >
-                                                                    12월
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- 검색창 구분선 -->
-                    <div class="partition"></div>
-
-                    <!-- 여행자 선택 부분 -->
-                    <div class="guest-select">
-                        <div class="guest-select-circle">
-                            <div class="guest-select-and-search">
-                                <div class="guest-select-area">
-                                    <div class="guest-select-and-add">
-                                        <div class="guest-naming" style="font-weight: bold">여행자</div>
-                                        <div class="guest-add">게스트 추가</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search-button-area">
-                                <button
+                        <div class="search-button-area">
+                            <button
                                     class="search-guest-button"
                                     type="button"
                                     data-testid="structured-search-input-search-button"
-                                >
-                                    <div class="search-click">
-                                        <div class="search-click-image">
-                                            <img
+                            >
+                                <div class="search-click">
+                                    <div class="search-click-image">
+                                        <img
                                                 id="magnifying-glass"
                                                 src="../images/magnifying-glass.png"
                                                 width="20px"
                                                 height="20px"
-                                            />
-                                        </div>
+                                        />
                                     </div>
-                                </button>
-                            </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                    <div class="guest-control-space">
-                        <section>
-                            <div class="guest-setting">
-                                <div class="adult-area">
-                                    <div class="adult-detail">
-                                        <div
+                </div>
+                <div class="guest-control-space">
+                    <section>
+                        <div class="guest-setting">
+                            <div class="adult-area">
+                                <div class="adult-detail">
+                                    <div
                                             style="
                                                 font-size: 16px;
                                                 font-family: Circular;
                                                 font-weight: bold;
                                                 color: #222222;
                                             "
-                                        >
-                                            성인
-                                        </div>
-                                        <div
+                                    >
+                                        성인
+                                    </div>
+                                    <div
                                             style="
                                                 font-size: 14px;
                                                 font-family: Circular;
                                                 color: #717171;
                                                 margin-top: 5px;
                                             "
-                                        >
-                                            13세 이상
-                                        </div>
+                                    >
+                                        13세 이상
                                     </div>
-                                    <div class="control-bar">
-                                        <button
+                                </div>
+                                <div class="control-bar">
+                                    <button
                                             class="minus-btn"
                                             style="
                                                 width: 32px;
@@ -799,11 +1066,11 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">-</span>
-                                        </button>
-                                        <div class="adult-count" style="color: #222222">0</div>
-                                        <button
+                                    >
+                                        <span style="font-size: 20px">-</span>
+                                    </button>
+                                    <div class="adult-count" style="color: #222222">0</div>
+                                    <button
                                             class="plus-btn"
                                             style="
                                                 width: 32px;
@@ -811,36 +1078,36 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">+</span>
-                                        </button>
-                                    </div>
+                                    >
+                                        <span style="font-size: 20px">+</span>
+                                    </button>
                                 </div>
-                                <div class="child-area">
-                                    <div class="child-detail">
-                                        <div
+                            </div>
+                            <div class="child-area">
+                                <div class="child-detail">
+                                    <div
                                             style="
                                                 font-size: 16px;
                                                 font-family: Circular;
                                                 font-weight: bold;
                                                 color: #222222;
                                             "
-                                        >
-                                            어린이
-                                        </div>
-                                        <div
+                                    >
+                                        어린이
+                                    </div>
+                                    <div
                                             style="
                                                 font-size: 14px;
                                                 font-family: Circular;
                                                 color: #717171;
                                                 margin-top: 5px;
                                             "
-                                        >
-                                            2~12세
-                                        </div>
+                                    >
+                                        2~12세
                                     </div>
-                                    <div class="control-bar">
-                                        <button
+                                </div>
+                                <div class="control-bar">
+                                    <button
                                             class="minus-btn"
                                             style="
                                                 width: 32px;
@@ -848,11 +1115,11 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">-</span>
-                                        </button>
-                                        <div class="child-count" style="color: #222222">0</div>
-                                        <button
+                                    >
+                                        <span style="font-size: 20px">-</span>
+                                    </button>
+                                    <div class="child-count" style="color: #222222">0</div>
+                                    <button
                                             class="plus-btn"
                                             style="
                                                 width: 32px;
@@ -860,36 +1127,36 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">+</span>
-                                        </button>
-                                    </div>
+                                    >
+                                        <span style="font-size: 20px">+</span>
+                                    </button>
                                 </div>
-                                <div class="baby-area">
-                                    <div class="baby-detail">
-                                        <div
+                            </div>
+                            <div class="baby-area">
+                                <div class="baby-detail">
+                                    <div
                                             style="
                                                 font-size: 16px;
                                                 font-family: Circular;
                                                 font-weight: bold;
                                                 color: #222222;
                                             "
-                                        >
-                                            유아
-                                        </div>
-                                        <div
+                                    >
+                                        유아
+                                    </div>
+                                    <div
                                             style="
                                                 font-size: 14px;
                                                 font-family: Circular;
                                                 color: #717171;
                                                 margin-top: 5px;
                                             "
-                                        >
-                                            2세 미만
-                                        </div>
+                                    >
+                                        2세 미만
                                     </div>
-                                    <div class="control-bar">
-                                        <button
+                                </div>
+                                <div class="control-bar">
+                                    <button
                                             class="minus-btn"
                                             style="
                                                 width: 32px;
@@ -897,11 +1164,11 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">-</span>
-                                        </button>
-                                        <div class="baby-count" style="color: #222222">0</div>
-                                        <button
+                                    >
+                                        <span style="font-size: 20px">-</span>
+                                    </button>
+                                    <div class="baby-count" style="color: #222222">0</div>
+                                    <button
                                             class="plus-btn"
                                             style="
                                                 width: 32px;
@@ -909,24 +1176,24 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">+</span>
-                                        </button>
-                                    </div>
+                                    >
+                                        <span style="font-size: 20px">+</span>
+                                    </button>
                                 </div>
-                                <div class="pet-area">
-                                    <div class="pet-detail">
-                                        <div
+                            </div>
+                            <div class="pet-area">
+                                <div class="pet-detail">
+                                    <div
                                             style="
                                                 font-size: 16px;
                                                 font-family: Circular;
                                                 font-weight: bold;
                                                 color: #222222;
                                             "
-                                        >
-                                            반려동물
-                                        </div>
-                                        <div
+                                    >
+                                        반려동물
+                                    </div>
+                                    <div
                                             style="
                                                 font-size: 14px;
                                                 font-family: Circular;
@@ -935,12 +1202,12 @@
                                                 margin-top: 5px;
                                                 text-decoration: underline;
                                             "
-                                        >
-                                            보조동물을 동반하시나요?
-                                        </div>
+                                    >
+                                        보조동물을 동반하시나요?
                                     </div>
-                                    <div class="control-bar">
-                                        <button
+                                </div>
+                                <div class="control-bar">
+                                    <button
                                             class="minus-btn"
                                             style="
                                                 width: 32px;
@@ -948,11 +1215,11 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">-</span>
-                                        </button>
-                                        <div class="pet-count" style="color: #222222">0</div>
-                                        <button
+                                    >
+                                        <span style="font-size: 20px">-</span>
+                                    </button>
+                                    <div class="pet-count" style="color: #222222">0</div>
+                                    <button
                                             class="plus-btn"
                                             style="
                                                 width: 32px;
@@ -960,17 +1227,19 @@
                                                 border: 1px solid #dddddd;
                                                 border-radius: 50px;
                                             "
-                                        >
-                                            <span style="font-size: 20px">+</span>
-                                        </button>
-                                    </div>
+                                    >
+                                        <span style="font-size: 20px">+</span>
+                                    </button>
                                 </div>
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+
+
         <!-- 메인페이지 -->
         <main class="detail">
             <!-- 지용님 상세페이지 -->
